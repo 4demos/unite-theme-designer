@@ -4,7 +4,7 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes');
-require('./handlebars_helpers');
+require('./lib/handlebars_helpers');
 
 var app = express();
 
