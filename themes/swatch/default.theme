@@ -1,0 +1,184 @@
+{{#html}}
+<head>
+  <title>{{page/title}} - {{church/name}}</title>
+  {{{unite/head}}}
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
+  {{#theme}}
+  <style type="text/css">
+    #body a,
+    #footer_navigation .footer-menu-items span,
+    #footer_navigation .footer-menu-items a,
+    #footer_address,
+    #footer_address a { color: rgb({{linkColor}}); }
+    
+    #header { background: url('{{theme/path}}/images/swatch-litebg.png'), rgb({{headerBackground}}); }
+    #subitems_nav > div,
+    #footer_wrapper { background: url('{{theme/path}}/images/swatch-litebg.png'), rgba({{headerBackground}},0.4); }
+    
+    .-unite-current-user span { background: rgb({{headerLinks}}); }
+    
+    #quick_info a,
+    #quick_info span { color: rgb({{headerLinks}}); }
+    
+    #subitems_nav li a,
+    .-unite-page-title,
+    #page_main h2,
+    legend,
+    #body h1.profile-name { color: rgb({{headingColor}}); }
+    
+    #subitems_nav li .current-child { background: rgb({{headingColor}}); }
+    
+    #body ul.-unite-page-admin li a {
+      background: rgb({{headerLinks}});
+      border: 1px solid rgb({{headingColor}});
+      color: rgb({{headingColor}});
+    }
+    #body ul.-unite-page-admin li a:hover {
+      color: rgb({{hoverColor}});
+    }
+    #body #_unite_save_document { background: rgb({{headingColor}}); }
+    
+    #wrapper a:hover { color: rgb({{hoverColor}}); }
+    
+    .-unite-current-user span,
+    .-unite-current-user a,
+    #navigation #menu .menu-item.current-list > span,
+    #navigation #menu .menu-item > span.menu-item-category:hover,
+    #navigation #menu .menu-item > span > a:hover,
+    #navigation .sub-menu .sub-menu-items a:hover { color: rgb({{navigationBackground}}); }
+    
+    #navigation #menu .menu-item > .menu-item-wrapper { background: rgb({{navigationBackground}}); }
+    #navigation .sub-menu .sub-menu-items .menu-item-current {
+      background: rgb({{navigationBackground}});
+      display: block !important;
+    }
+    
+    #navigation #menu .menu-item > span.menu-item-category:hover,
+    #navigation #menu .menu-item > span > a:hover,
+    #navigation #menu .menu-item.current-list > span,
+    #navigation .sub-menu { background: rgb({{activeNavigation}}); }
+    
+    #navigation .sub-menu:after { border-color: rgb({{activeNavigation}}) transparent;}
+    #navigation .sub-menu .sub-menu-items a,
+    #navigation .sub-menu .sub-menu-items span {
+      color: rgb({{navigationBackground}});
+    }
+    #navigation .sub-menu .sub-menu-items span { border-bottom: 1px solid rgb({{headerLinks}}); }
+    #navigation .sub-menu .sub-menu-items:hover { background: rgb({{navigationBackground}}); }
+    #navigation .sub-menu .sub-menu-items a:hover { color: white; }
+    
+    body { font-family: "{{bodyFont}}" }
+    #church_name h1,
+    .menu-item span,
+    .menu-item a,
+    .-unite-page-title,
+    #page_main h2,
+    legend,
+    #subitems_nav { font-family: "{{headingFont}}" }
+  </style>
+  {{/theme}}
+  <link href="{{theme/path}}/stylesheets/theme.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div id="header">
+    <div>
+      <div id="current_user_wrapper">
+        <div id="current_user">
+          {{{navigation/currentUser}}}
+        </div>
+      </div>
+      <div id="church_name_and_nav">
+        <div id="church_name">
+          <h1>{{church/name}}</h1>
+        </div>
+        <div id="navigation">
+          {{#navigation}}
+            <ol id="menu">
+              {{#menuItems}}
+                <li class="menu-item {{#if current}}current-list{{/if}}">
+                  {{{menuItem}}}
+                  {{#ifAny children}}
+                    <ol class="sub-menu {{#if current}}current-sub-menu{{/if}}">
+                      {{#children}}
+                        <li class="sub-menu-items">{{{menuItem}}}</li>
+                      {{/children}}
+                    </ol>
+                  {{/ifAny}}
+                </li>
+              {{/menuItems}}
+            </ol>
+          {{/navigation}}
+        </div>
+      </div>
+      <div id="quick_info">
+        {{#church}}
+          {{#if address}}<span class="quick-info-item address">{{#linkToMap address}}Directions{{/linkToMap}}</span>{{/if}}
+          {{#if phone}}<span class="quick-info-item phone"><span>{{phone}}</span></span>{{/if}}
+          {{#if email}}<span class="quick-info-item email"><a href="mailto:{{email}}">{{email}}</a></span>{{/if}}
+        {{/church}}
+      </div>
+      <div id="search_box">
+        <span class='icon icon-search'></span>
+        {{{navigation/searchBox}}}
+      </div>
+    </div>
+  </div>
+  
+  <div id="wrapper">
+    <div id="body_container">
+      {{{page/alerts}}}
+      
+      <div id="body" class="{{#ifAny navigation/currentCategory}}page-has-subitems{{/ifAny}}">
+        {{#page}}
+          {{{admin}}}
+          <h1 class="page-heading">{{{heading}}}</h1>
+          {{{body}}}
+        {{/page}}
+      </div>
+      
+      <div id="subitems_nav" class="{{#ifAny navigation/currentCategory}}has-subitems{{/ifAny}}">
+        <div>
+          <ul>
+            {{#each navigation/currentCategory}}
+              <li>{{{this}}}</li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div id="footer_wrapper">
+    <div id="footer">
+      <div id="footer_navigation">
+        {{#navigation}}
+          <ol id="footer_menu">
+            {{#menuItems}}
+              {{#ifNone children}}
+                <li class="footer-menu-items">
+                  <span>{{{menuItem}}}<span>
+                </li>
+              {{/ifNone}}
+            {{/menuItems}}
+          </ol>
+        {{/navigation}}
+      </div>
+      
+      <div id="footer_address">
+        {{#church}}
+          {{name}}<br />
+          {{#if address}}
+            {{#linkToMap address}}
+              {{#lines address}}
+                {{this}}<br />
+              {{/lines}}
+            {{/linkToMap}}<br />
+          {{/if}}
+        {{/church}}
+      </div>
+    </div>
+  </div>
+  {{{unite/scripts}}}
+  <script src="{{theme/path}}/javascripts/theme.js" type="text/javascript" charset="utf-8"></script>
+</body>
+{{/html}}

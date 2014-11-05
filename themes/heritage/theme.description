@@ -1,0 +1,93 @@
+---
+name: Heritage
+notes: |
+  The use of white space together with the absence of boundaries gives the Heritage theme a traditional and fluid look and feel.
+options:
+  "Link Color": :color
+  "Header Accent": :color
+  "Active Navigation": :color
+  "Hover Color": :color
+  "Footer Color": :color
+  "Title Font": [:option, "Arial", "Georgia", "Lucida Sans", "Tahoma", "Times New Roman", "Trebuchet MS", "Verdana", "Cinzel", "Impact"]
+  "Body Font": [:option, "Arial", "Georgia", "Lucida Sans", "Tahoma", "Times New Roman", "Trebuchet MS", "Verdana", "Cinzel"]
+presets:
+  "Lou":
+    "Link Color": "51, 102, 253" #3366fd (Royal)
+    "Header Accent": "46, 79, 176" #2e4fb0 (Navy)
+    "Active Navigation": "51, 102, 253" #3366fd (Royal)
+    "Hover Color": "46, 79, 176" #2e4fb0 (Navy)
+    "Footer Color": "46, 79, 176" #2e4fb0 (Navy)
+    "Title Font": "Cinzel"
+    "Body Font": "Times New Roman"
+  "Victor":
+    "Link Color": "30, 165, 106" #1ea56a (Green)
+    "Header Accent": "42, 96, 74" #2a604a (Green Door)
+    "Active Navigation": "120, 187, 160" #78bba0 (Green Tea)
+    "Hover Color": "54, 111, 86" #366F56 (Dark Teal)
+    "Footer Color": "9, 219, 128" #09db80 (Teal)
+    "Title Font": "Cinzel"
+    "Body Font": "Times New Roman"
+  "Adella":
+    "Link Color": "219, 64, 34" #db4022 (Grapefruit)
+    "Header Accent": "170, 83, 67" #aa5343 (Lite Red)
+    "Active Navigation": "233, 135, 116" #e98774 (Peachy)
+    "Hover Color": "233, 135, 116" #e98774 (Peachy)
+    "Footer Color": "170, 83, 67" #aa5343 (Lite Red)
+    "Title Font": "Cinzel"
+    "Body Font": "Times New Roman"
+  "Black and White":
+    "Link Color": "0, 0, 0" #000000 (Black)
+    "Header Accent": "0, 0, 0" #000000 (Black)
+    "Active Navigation": "255, 255, 255" #FFFFFF (White)
+    "Hover Color": "171, 171, 171" #ABABAB (Silver)
+    "Footer Color": "0, 0, 0" #000000 (Black)
+    "Title Font": "Impact"
+    "Body Font": "Arial"
+  "Union Jack":
+    "Link Color": "45, 33, 55" #2D2137 (Navy)
+    "Header Accent": "220, 1, 43" #DC012B (Red)
+    "Active Navigation": "45, 33, 55" #2D2137 (Navy)
+    "Hover Color": "220, 1, 43" #DC012B (Red)
+    "Footer Color": "220, 1, 43" #DC012B (Red)
+    "Title Font": "Tahoma"
+    "Body Font": "Tahoma"
+  "Coconut Lime":
+    "Link Color": "32, 76, 87" #204C57 (Navy)
+    "Header Accent": "32, 76, 87" #204C57 (Navy)
+    "Active Navigation": "184, 212, 50" #B8D432 (Lime)
+    "Hover Color": "184, 212, 50" #B8D432 (Lime)
+    "Footer Color": "32, 76, 87" #204C57 (Navy)
+    "Title Font": "Trebuchet MS"
+    "Body Font": "Trebuchet MS"
+  "Berry Blue":
+    "Link Color": "125, 25, 53" #7D1935 (Raspberry)
+    "Header Accent": "125, 25, 53" #7D1935 (Raspberry)
+    "Active Navigation": "73, 150, 171" #4996AB (Blue)
+    "Hover Color": "73, 150, 171" #4996AB (Blue)
+    "Footer Color": "125, 25, 53" #7D1935 (Raspberry)
+    "Title Font": "Trebuchet MS"
+    "Body Font": "Trebuchet MS"
+  "Pumpkin Spice":
+    "Link Color": "198, 61, 15" #c63d0f (Orange)
+    "Header Accent": "198, 61, 15" #c63d0f (Orange)
+    "Active Navigation": "126, 143, 124" #7e8f7c (Green)
+    "Hover Color": "126, 143, 124" #7e8f7c (Green)
+    "Footer Color": "198, 61, 15" #c63d0f (Orange)
+    "Title Font": "Verdana"
+    "Body Font": "Verdana"
+  "Dorylas":
+    "Link Color": "156, 176, 55" #9CB037 (Dark Green)
+    "Header Accent": "200, 224, 82" #C8E052 (Green)
+    "Active Navigation": "71, 207, 235" #47CFEB (Blue)
+    "Hover Color": "71, 207, 235" #47CFEB (Blue)
+    "Footer Color": "156, 176, 55" #9CB037 (Dark Green)
+    "Title Font": "Impact"
+    "Body Font": "Lucida Sans"
+  "Bee Hive":
+    "Link Color": "255, 198, 34" #FFC622 (Gold)
+    "Header Accent": "255, 198, 34" #FFC622 (Gold)
+    "Active Navigation": "255, 198, 34" #FFC622 (Gold)
+    "Hover Color": "79, 78, 78" #4F4E4E (Dark Silver)
+    "Footer Color": "255, 198, 34" #FFC622 (Gold)
+    "Title Font": "Trebuchet MS"
+    "Body Font": "Trebuchet MS"

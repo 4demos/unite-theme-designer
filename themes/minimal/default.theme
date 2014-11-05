@@ -1,0 +1,112 @@
+{{#html}}
+<head>
+  <title>{{page/title}} - {{church/name}}</title>
+  {{{unite/head}}}
+  <link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
+  <link href="{{theme/path}}/stylesheets/theme.css" media="screen" rel="stylesheet" type="text/css" />
+  {{#ifEql theme/navigation "Top"}}
+    <link href="{{theme/path}}/stylesheets/theme-top.css" media="screen" rel="stylesheet" type="text/css" />
+  {{else}}
+    <link href="{{theme/path}}/stylesheets/theme-left.css" media="screen" rel="stylesheet" type="text/css" />
+  {{/ifEql}}
+  {{#theme}}
+  <style type="text/css">
+    input#search::-webkit-input-placeholder { color: rgb({{linkSelectedColor}}); }
+    input#search:-moz-placeholder { color: rgb({{linkSelectedColor}}); }
+    input#search { border-color: rgb({{linkSelectedColor}}); }
+    #container a:not(.btn),
+    #footer a {
+      background-color: rgb({{linkBackgroundColor}});
+      color: rgb({{headingColor}}); }
+    #navigation ol li span.current,
+    #container .tab.selected .tab-name a,
+    #container .breadcrumb.current { background-color: rgb({{linkSelectedColor}}); }
+    h1, h2, h3, h4, h5, h6 { color: rgb({{headingColor}}); }
+    #container a:not(.btn):hover,
+    #footer a:hover { background-color: rgb({{linkHoverColor}}); }
+    a#church_name, a#church_name:hover { color: rgb({{accentColor}}) !important; }
+    #page_sidebar { border-left: 1px solid rgb({{linkSelectedColor}}); }
+  </style>
+  {{/theme}}
+</head>
+<body>
+  {{#if theme/background}}
+    <img src="{{theme/background}}" id="background" />
+  {{/if}}
+  <div id="container">
+{{#ifEql theme/navigation "Top"}}
+    <div id="header" class="centered">
+      <h1><a id="church_name" href="/">{{church/name}}</a></h1>
+      <div id="secondary_navigation">
+        <div id="search">{{{navigation/searchBox}}}</div>
+        <div id="authentication">{{{navigation/currentUser}}}</div>
+      </div>
+    </div>
+    <div id="navigation" class="centered">
+      <ol id="navigation" class="menu">
+      {{#navigation/menuItems}}
+        <li class="menuItem">
+          {{{menuItem}}}
+        </li>
+      {{/navigation/menuItems}}
+      </ol>
+    </div>
+{{else}}
+    <div id="header">
+      <h1><a id="church_name" href="/">{{church/name}}</a></h1>
+      <div id="authentication">{{{navigation/currentUser}}}</div>
+    </div>
+    <div id="navigation">
+      <div id="search">{{{navigation/search}}}</div>
+      <ol class="menu">
+      {{#navigation/menuItems}}
+        <li class="menuItem">
+          {{{menuItem}}}
+        </li>
+      {{/navigation/menuItems}}
+      </ol>
+    </div>
+{{/ifEql}}
+    <div id="body" class="centered">
+      {{#page}}
+        {{{alerts}}}
+        {{{admin}}}
+        <h1 id="page_title" class="top">{{{heading}}}</h1>
+        <ol class="breadcrumbs">
+        {{#breadcrumbs}}
+          <li>{{{this}}}</li>
+        {{/breadcrumbs}}
+        </ol>
+        <div id="main">
+          {{{body}}}
+        </div>
+      {{/page}}
+    </div>
+  </div>
+  <div id="footer-wrap">
+    <div id="footer" class="centered">
+      {{#church}}
+        <span class="copyright">© Copyright 2011</span>
+        <span class="church-name">{{name}}</span><br />
+        {{#if address}}
+          <span class="church-address">
+            {{#linkToMap address}}
+              {{#lines address}}
+                <span class="church-address-line">{{this}}</span>
+              {{/lines}}
+            {{/linkToMap}}
+          </span>
+        {{/if}}
+        {{#if phone}}
+          <span class="church-phone">{{phone}}</span>
+        {{/if}}
+        {{#if email}}
+          <span class="church-email"><a href="mailto:{{email}}">{{email}}</a></span>
+        {{/if}}
+      {{/church}}
+    </div>
+  </div>
+  {{{unite/scripts}}}
+  <script src="{{theme/path}}/javascripts/theme.js" type="text/javascript" charset="utf-8"></script>
+</body>
+{{/html}}

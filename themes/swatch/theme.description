@@ -1,0 +1,145 @@
+---
+name: Swatch
+notes: |
+  This theme employs a bold color statement and tonal accents together with condensed font styles.
+options:
+  "Link Color": :color
+  "Header Links": :color
+  "Header Background": :color
+  "Heading Color": :color
+  "Hover Color": :color
+  "Navigation Background": :color
+  "Active Navigation": :color
+  "Heading Font": [:option, "Yanone Kaffeesatz"]
+  "Body Font": [:option, "Arial", "Trebuchet MS", "Verdana", "Lucida Sans"]
+presets:
+  "Grass":
+    "Link Color": "99, 151, 0" #639700 (Grass)
+    "Header Links": "178, 216, 5" #c6f06e (Bright Green)
+    "Header Background": "63, 103, 0" #3f6700 (Dark Green)
+    "Heading Color": "56, 118, 101" #387665 (Teal)
+    "Hover Color": "51, 51, 51" #333333 (Slate)
+    "Navigation Background": "39, 62, 4" #273E04 (Really Dark Green)
+    "Active Navigation": "226, 243, 190" #e2f3be (Washed Green)
+    "Heading Font": "Yanone Kaffeesatz"
+    "Body Font": "Trebuchet MS"
+  "Rust":
+    "Link Color": "231, 106, 13" #E76A0D (Orange)
+    "Header Links": "246, 162, 99" #F6A263 (Peach)
+    "Header Background": "161, 79, 18" #A14F12 (Dried Blood)
+    "Heading Color": "138, 68, 15" #8A440f (Burnt Orange)
+    "Hover Color": "51, 51, 51" #333333 (Slate)
+    "Navigation Background": "111, 48, 16" #6F3010 (Dark Blood)
+    "Active Navigation": "247, 203, 170" #F7CBAA (Cream)
+    "Heading Font": "Yanone Kaffeesatz"
+    "Body Font": "Trebuchet MS"
+  "Ocean":
+    "Link Color": "0, 126, 255" #007eff (Blue)
+    "Header Links": "138, 193, 250" #8ac1fa (Light Blue)
+    "Header Background": "18, 89, 161" #1259a1 (Deep Blue)
+    "Heading Color": "27, 88, 151" #1b5897 (Dark Blue)
+    "Hover Color": "51, 51, 51" #333333 (Slate)
+    "Navigation Background": "11, 60, 84" #0b3c54 (Medium Blue)
+    "Active Navigation": "138, 193, 250" #8ac1fa (Shallow Blue)
+    "Heading Font": "Yanone Kaffeesatz"
+    "Body Font": "Trebuchet MS"
+  "Lilac":
+    "Link Color": "133, 54, 139" #85368B (Other Purple)
+    "Header Links": "192, 107, 198" #C06BC6 (Light Purple)
+    "Header Background": "79, 25, 83" #4f1953 (Purple)
+    "Heading Color": "85, 28, 89" #551c59 (Dark Purple)
+    "Hover Color": "51, 51, 51" #333333 (Slate)
+    "Navigation Background": "49, 17, 43" #31112B (Darkest Purple)
+    "Active Navigation": "193, 144, 197" #c190c5 (Light Purple)
+    "Heading Font": "Yanone Kaffeesatz"
+    "Body Font": "Trebuchet MS"
+  "Slate Blue":
+    "Link Color": "38, 55, 62" #26373e (Dark Navy)
+    "Header Links": "160, 174, 184" #a0aeb8 (Light Navy)
+    "Header Background": "62, 98, 124" #3e627c (Navy)
+    "Heading Color": "38, 55, 62" #26373e (Dark Navy)
+    "Hover Color": "62, 98, 124" #3e627c (Navy)
+    "Navigation Background": "38, 55, 62" #26373e (Dark Navy)
+    "Active Navigation": "160, 174, 184" #a0aeb8 (Light Navy)
+    "Heading Font": "Yanone Kaffeesatz"
+    "Body Font": "Trebuchet MS"
+  "Limeade":
+    "Link Color": "89, 97, 51" #596133 (Dark Lime)
+    "Header Links": "255, 255, 255" #FFFFFF (White)
+    "Header Background": "200, 224, 82" #C8E052 (Lime)
+    "Heading Color": "33, 33, 33" #212121 (Black)
+    "Hover Color": "200, 224, 82" #C8E052 (Lime)
+    "Navigation Background":  "33, 33, 33" #212121 (Black)
+    "Active Navigation": "255, 255, 255" #FFFFFF (White)
+    "Heading Font": "Yanone Kaffeesatz"
+    "Body Font": "Trebuchet MS"
+  "Blue Chocolate":
+    "Link Color": "61, 105, 135" #3d6987 (Dark Blue)
+    "Header Links": "91, 159, 207" #5b9fcf (Light Blue)
+    "Header Background": "51, 44, 38" #332C26 (Dark Brown)
+    "Heading Color": "61, 105, 135" #3d6987 (Dark Blue)
+    "Hover Color": "26, 24, 22" #1a1816 (Black)
+    "Navigation Background": "26, 24, 22" #1a1816 (Black)
+    "Active Navigation": "91, 159, 207" #5b9fcf (Light Blue)
+    "Heading Font": "Yanone Kaffeesatz"
+    "Body Font": "Lucida Sans"
+  "Union Jack":
+    "Link Color": "45, 33, 55" #2D2137 (Navy)
+    "Header Links": "246, 244, 249" #F6F4F9 (White)
+    "Header Background": "45, 33, 55" #2D2137 (Navy)
+    "Heading Color": "45, 33, 55" #2D2137 (Navy)
+    "Hover Color":  "220, 1, 43" #DC012B (Red)
+    "Navigation Background":  "220, 1, 43" #DC012B (Red)
+    "Active Navigation": "246, 244, 249" #F6F4F9 (White)
+    "Heading Font": "Yanone Kaffeesatz"
+    "Body Font": "Tahoma"
+  "Log Cabin":
+    "Link Color": "52, 42, 20" #342A14 (Dark Brown)
+    "Header Links": "245, 255, 192" #F5FFC0 (Tan)
+    "Header Background": "83, 13, 13" #530D0D (Burgundy)
+    "Heading Color": "83, 13, 13" #530D0D (Burgundy)
+    "Hover Color":  "245, 255, 192" #F5FFC0 (Tan)
+    "Navigation Background":  "52, 42, 20" #342A14 (Dark Brown)
+    "Active Navigation": "245, 255, 192" #F5FFC0 (Tan)
+    "Heading Font": "Yanone Kaffeesatz"
+    "Body Font": "Georgia"
+  "Pumpkin Spice":
+    "Link Color": "126, 143, 124" #7e8f7c (Green)
+    "Header Links": "59, 55, 56" #3b3738 (Black)
+    "Header Background":  "198, 61, 15" #c63d0f (Orange)
+    "Heading Color":  "198, 61, 15" #c63d0f (Orange)
+    "Hover Color":  "245, 255, 192" #F5FFC0 (Tan)
+    "Navigation Background":   "59, 55, 56" #3b3738 (Black)
+    "Active Navigation": "126, 143, 124" #7e8f7c (Green)
+    "Heading Font": "Yanone Kaffeesatz"
+    "Body Font": "Verdana"
+  "Berry Blue":
+    "Link Color": "125, 25, 53" #7D1935 (Raspberry)
+    "Header Links": "245, 243, 237" #F5F3ED (White)
+    "Header Background":  "125, 25, 53" #7D1935 (Raspberry)
+    "Heading Color":  "125, 25, 53" #7D1935 (Raspberry)
+    "Hover Color":  "73, 150, 171" #4996AB (Blue)
+    "Navigation Background":   "73, 150, 171" #4996AB (Blue)
+    "Active Navigation": "245, 243, 237" #F5F3ED (White)
+    "Heading Font": "Yanone Kaffeesatz"
+    "Body Font": "Trebuchet MS"
+  "Bee Hive":
+    "Link Color": "255, 198, 34" #FFC622 (Gold)
+    "Header Links": "255, 198, 34" #FFC622 (Gold)
+    "Header Background":  "0, 0, 0" #000000 (Black)
+    "Heading Color":  "255, 198, 34" #FFC622 (Gold)
+    "Hover Color":  "79, 78, 78" #4F4E4E (Dark Silver)
+    "Navigation Background":   "79, 78, 78" #4F4E4E (Dark Silver)
+    "Active Navigation": "255, 198, 34" #FFC622 (Gold)
+    "Heading Font": "Yanone Kaffeesatz"
+    "Body Font": "Trebuchet MS"
+  "Coconut Lime":
+    "Link Color": "19, 39, 48" #132730 (Black)
+    "Header Links": "184, 212, 50" #B8D432 (Lime)
+    "Header Background":  "19, 39, 48" #132730 (Black)
+    "Heading Color":  "19, 39, 48" #132730 (Black)
+    "Hover Color":  "184, 212, 50" #B8D432 (Lime)
+    "Navigation Background":   "32, 76, 87" #204C57 (Navy)
+    "Active Navigation": "184, 212, 50" #B8D432 (Lime)
+    "Heading Font": "Yanone Kaffeesatz"
+    "Body Font": "Trebuchet MS"

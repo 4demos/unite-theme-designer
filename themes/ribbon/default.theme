@@ -1,0 +1,116 @@
+{{#html}}
+<head>
+  <title>{{page/title}} - {{church/name}}</title>
+  {{{unite/head}}}
+  <link href="{{theme/path}}/stylesheets/theme.css" media="screen" rel="stylesheet" type="text/css" />
+  {{#theme}}
+  <style type="text/css">
+    body {
+      font-family: {{bodyFont}};
+      background-color: rgb({{backgroundColor}}); }
+    a, a:visited, a:hover { color: rgb({{linkColor}}); }
+    #body-wrap { background-color: rgb({{stripeColor}}); }
+    #page_main:after {
+      content:".";
+      text-indent:-9999em;
+      position:absolute;
+      top:0;
+      bottom:0;
+      right:0;
+      width:200px;
+      display:block;
+      z-index:4;
+      background-color:rgba({{stripeColor}}, 0.2); }
+    .tabs > li, legend { border-color: rgb({{stripeColor}}); }
+    #body-wrap { background-color: rgb({{stripeColor}}); }
+    .ribbon-lower, .ribbon { background-color: rgb({{ribbonColor}}); }
+    li.menuItem a:hover { background-color: rgb({{hoverColor}}); }
+    li.menuItem.hasSubMenu:hover { background-color: rgb({{hoverColor}}); }
+    li.menuItem span.menu-item-current { background-color: rgb({{selectionColor}}); }
+    span.breadcrumb.current,
+    h1, h2, h3, h4, h5 {
+      font-family: {{headingFont}};
+      color: rgb({{headingColor}}); }
+    li.menuItem { font-family: {{headingFont}}; }
+  </style>
+  {{/theme}}
+</head>
+<body>
+  <div id="header-wrap">
+    {{#if theme/banner}}
+      <div id="header" style="height:144px">
+        <img src="{{theme/banner}}" width="910" height="144" id="banner" />
+    {{else}}
+      <div id="header">
+        <h1 id="church_name">{{church/name}}</h1>
+    {{/if}}
+      <div id="secondary_navigation">
+        <div id="search">{{{navigation/searchBox}}}</div>
+        <div id="authentication">{{{navigation/currentUser}}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="ribbon-wrap ribbon-wrap-top">
+      <div class="ribbon-lower ribbon-lower-top"></div>
+      <div class="ribbon ribbon-top">
+        {{#navigation}}
+          <ol id="navigation" class="menu">
+            {{#menuItems}}
+              <li class="menuItem{{#ifAny children}} hasSubMenu{{/ifAny}}{{#if current}} current-list{{/if}}">
+                {{{menuItem}}}
+                {{#ifAny children}}
+                  <ol class="menu subMenu">
+                    {{#children}}
+                      <li class="menuItem">{{{menuItem}}}</li>
+                    {{/children}}
+                  </ol>
+                {{/ifAny}}
+              </li>
+            {{/menuItems}}
+          </ol>
+        {{/navigation}}
+      </div>
+    </div>
+  </div>
+  <div id="body-wrap">
+    <div id="body">
+      {{#page}}
+        {{{admin}}}
+        <h1 id="page_title" class="top">{{{heading}}}</h1>
+        <p class="breadcrumbs">{{#breadcrumbs}}{{{this}}}{{/breadcrumbs}}</p>
+        {{{alerts}}}
+        {{{body}}}
+      {{/page}}
+    </div>
+  </div>
+  <div class="ribbon-wrap ribbon-wrap-bottom">
+    <div class="ribbon-lower ribbon-lower-bottom"></div>
+    <div class="ribbon ribbon-bottom"></div>
+  </div>
+  <div id="footer-wrap">
+    <div id="footer">
+      {{#church}}
+        <span class="copyright">© Copyright 2011</span>
+        <span class="church-name">{{name}}</span><br />
+        {{#if address}}
+          <span class="church-address">
+            {{#linkToMap address}}
+              {{#lines address}}
+                <span class="church-address-line">{{this}}</span>
+              {{/lines}}
+            {{/linkToMap}}
+          </span><br />
+        {{/if}}
+        {{#if phone}}
+          <span class="church-phone">{{phone}}</span><br />
+        {{/if}}
+        {{#if email}}
+          <span class="church-email"><a href="mailto:{{email}}">{{email}}</a></span>
+        {{/if}}
+      {{/church}}
+    </div>
+  </div>
+  {{{unite/scripts}}}
+  <script src="{{theme/path}}/javascripts/theme.js" type="text/javascript" charset="utf-8"></script>
+</body>
+{{/html}}

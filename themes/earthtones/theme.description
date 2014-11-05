@@ -1,0 +1,75 @@
+---
+name: Earthtones
+notes: |
+  A balance of font styles together with textured backgrounds and rough cut edges give this theme an earth look and feel.
+options:
+  "Link Color": :color
+  "Header Links": :color
+  "Header Accent": :color
+  "Header Background": :file
+  "Heading Color": :color
+  "Hover Color": :color
+  "Navigation Text": :color
+  "Title Font": [:option, "Arial", "Georgia", "Sanchez", "Times New Roman"]
+  "Body Font": [:option, "Arial", "Georgia", "Times New Roman"]
+presets:
+  "Crust":
+    "Link Color": "163, 167, 21" #A3A715 (Lime Shadow)
+    "Header Links": "200, 204, 28" #C8CC1C (Lime Shadow)
+    "Header Accent": "200, 204, 28" #C8CC1C (Lime Shadow)
+    "Header Background": "/themes/earthtones/assets/crust.png"
+    "Heading Color": "191, 103, 57" #bf6739 (Rust)
+    "Hover Color": "66, 66, 66" #424242 (Dark Slate)
+    "Navigation Text": "172, 175, 50" #ACAF42 (Olive)
+    "Title Font": "Sanchez"
+    "Body Font": "Helvetica Neue"
+  "Mantle":
+    "Link Color": "255, 141, 10" #ff8d0a (Orange)
+    "Header Links": "255, 141, 10" #ff8d0a (Dirty Orange)
+    "Header Accent": "174, 105, 25" #ae6919 (Dirty Orange)
+    "Header Background": "/themes/earthtones/assets/mantle.png"
+    "Heading Color": "143, 126, 100" #8f7e64 (Moose)
+    "Hover Color": "66, 66, 66" #424242 (Dark Slate)
+    "Navigation Text": "174, 105, 25" #AE6919 (Dirty Orange)
+    "Title Font": "Sanchez"
+    "Body Font": "Helvetica Neue"
+  "Core":
+    "Link Color": "192, 43, 86" #c02b56 (Almost Magenta)
+    "Header Links": "205, 156, 55" #cd9c37 (Gold)
+    "Header Accent": "152, 115, 63" #98733f (Dirty Gold)
+    "Header Background": "/themes/earthtones/assets/core.png"
+    "Heading Color": "135, 80, 96" #875060 (Mavue)
+    "Hover Color": "66, 66, 66" #424242 (Dark Slate)
+    "Navigation Text": "207, 192, 142" #CFC080 (Elephant)
+    "Title Font": "Sanchez"
+    "Body Font": "Helvetica Neue"
+  "Slate Blue":
+    "Link Color": "38, 55, 62" #26373e (Dark Navy)
+    "Header Links": "255, 255, 255" #ffffff (White)
+    "Header Accent": "62, 98, 124" #3e627c (Navy)
+    "Header Background": "/themes/earthtones/assets/crust.png"
+    "Heading Color": "62, 98, 124" #3e627c (Navy)
+    "Hover Color": "62, 98, 124" #3e627c (Navy)
+    "Navigation Text": "255, 255, 255" #ffffff (White)
+    "Title Font": "Trebuchet MS"
+    "Body Font": "Trebuchet MS"
+  "Espresso":
+    "Link Color": "12, 165, 176" #0CA5B0 (Teal)
+    "Header Links": "12, 165, 176" #0CA5B0 (Teal)
+    "Header Accent": "12, 165, 176" #0CA5B0 (Teal)
+    "Header Background": "/themes/earthtones/assets/core.png"
+    "Heading Color": "78, 63, 48" #4E3F30 (Black)
+    "Hover Color": "165, 179, 170" #A5B3AA (Silver)
+    "Navigation Text": "12, 165, 176" #0CA5B0 (Teal)
+    "Title Font": "Arial"
+    "Body Font": "Arial"
+  "Log Cabin":
+    "Link Color": "83, 13, 13" #530D0D (Burgundy)
+    "Header Links": "245, 255, 192" #F5FFC0 (Tan)
+    "Header Accent": "26, 18, 2" #1A1202 (Black)
+    "Header Background": "/themes/earthtones/assets/mantle.png"
+    "Heading Color": "83, 13, 13" #530D0D (Burgundy)
+    "Hover Color": "52, 42, 20" #342A14 (Dark Brown)
+    "Navigation Text": "245, 255, 192" #F5FFC0 (Tan)
+    "Title Font": "Georgia"
+    "Body Font": "Arial"

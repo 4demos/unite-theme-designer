@@ -1,0 +1,46 @@
+---
+name: Minimal
+notes: |
+  The Minimal theme features bold typography and well-paced text lines.
+  Site navigation can be horizontal or vertical but does not support subnavigation.
+options:
+  "Accent Color": :color
+  "Link Background Color": :color
+  "Link Hover Color": :color
+  "Link Selected Color": :color
+  "Heading Color": :color
+  "Background": :file
+  "Navigation": [:option, "Top", "Left"]
+presets:
+  "Agnus Dei":
+    "Accent Color": "244, 198, 112" #f4c670 (Gold)
+    "Link Background Color": "244, 242, 240" #f4f2f0 (Silver)
+    "Link Hover Color": "244, 198, 112" #f4c670 (Gold)
+    "Link Selected Color": "118, 116, 114" #767472 (Graphite)
+    "Heading Color": "118, 116, 114" #767472 (Graphite)
+    "Background": "/themes/minimal/assets/agnus_dei.jpg"
+    "Navigation": "Left"
+  "Classic":
+    "Accent Color": "244, 198, 112" #f4c670 (Gold)
+    "Link Background Color": "240, 240, 240" #f0f0f0 (Silver)
+    "Link Hover Color": "244, 198, 112" #f4c670 (Gold)
+    "Link Selected Color": "114, 114, 114" #727272 (Graphite)
+    "Heading Color": "114, 114, 114" #727272 (Graphite)
+    "Background": ""
+    "Navigation": "Top"
+  "New Creation (Top navigation)":
+    "Accent Color": "60, 97, 21" #3c6115 (Pine)
+    "Link Background Color": "237, 245, 225" #edf5df (Green Frost)
+    "Link Hover Color": "119, 161, 42" #77a12a (Guacamole)
+    "Link Selected Color": "60, 97, 21" #3c6115 (Pine)
+    "Heading Color": "91, 125, 29" #5b7d1d (Green Apple)
+    "Background": "/themes/minimal/assets/new_creation.jpg"
+    "Navigation": "Top"
+  "New Creation (Left navigation)":
+    "Accent Color": "60, 97, 21" #3c6115 (Pine)
+    "Link Background Color": "237, 245, 225" #edf5df (Green Frost)
+    "Link Hover Color": "119, 161, 42" #77a12a (Guacamole)
+    "Link Selected Color": "60, 97, 21" #3c6115 (Pine)
+    "Heading Color": "91, 125, 29" #5b7d1d (Green Apple)
+    "Background": "/themes/minimal/assets/new_creation.jpg"
+    "Navigation": "Left"

@@ -1,0 +1,36 @@
+
+.centered {
+  width:960px;
+  position:relative;
+  left:50%;
+  margin-left:-480px;
+}
+
+#header h1 {
+  margin:0.5em 0 0 0;
+  max-width:680px;
+}
+
+#secondary_navigation {
+  position:absolute;
+  top:0;
+  right:0;
+  text-align:right;
+}
+
+input#search {
+  font-size:1.25em;
+  margin-bottom: 0.25em;
+}
+
+.menu {
+  padding:5px 15px 0 0;
+}
+
+.menuItem,
+.menuItem span.current {
+  display:inline-block;
+}
+
+#page_main { width: 700px; }
+

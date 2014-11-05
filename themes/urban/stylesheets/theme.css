@@ -1,0 +1,333 @@
+body .icon {
+  margin-right: 5px;
+  font-size: 16px;
+  text-decoration: none;
+}
+#body .btn.btn-primary,
+.modal .btn.btn-primary { color: white; }
+
+body, html {
+  height: 100%;
+}
+
+/****************** Body and main content wrapper */
+#wrapper {
+  width: 960px;
+  margin: 0 auto 40px auto;
+  padding: 15px 30px;
+  background: white;
+  -moz-box-shadow: 0 0 8px 0 #888;
+  -webkit-box-shadow: 0 0 8px 0 #888;
+  box-shadow: 0 0 8px 0 #888;
+  position: relative;
+  min-height: 100%;
+  height: auto !important;
+  margin: 0 auto -165px;
+}
+
+
+/****************** Current user options */
+#current_user_wrapper {
+  width: 1020px;
+  margin: 12px auto;
+}
+#current_user_wrapper:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+#current_user {
+  float: right;
+}
+
+.-unite-welcome-message,
+.-unite-welcome-message a {
+  color: #333333;
+}
+
+.-unite-link-to-settings {
+  padding: 6px 10px;
+}
+.-unite-link-to-settings a {
+  color: white;
+}
+
+.-unite-link-to-signout {
+  padding: 6px 10px;
+}
+.-unite-link-to-signout a {
+  color: white;
+}
+
+.-unite-link-to-signin {
+  padding: 6px 10px;
+}
+.-unite-link-to-signin a {
+  color: white;
+}
+
+.-unite-link-to-settings a:hover,
+.-unite-link-to-signin a:hover,
+.-unite-link-to-signout a:hover {
+  color: white;
+}
+
+/****************** Quick info */
+#quick_info:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.quick-info-item {
+  float: right;
+  margin-left: 20px;
+}
+.quick-info-item a {
+  text-decoration: none;
+}
+
+
+/****************** Church name and search */
+#church_name_search {
+  width: 100%;
+  height: 50px;
+}
+#church_name_search:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#church_name_search > div {
+  float: left;
+  height: 100%;
+}
+
+#church_name {
+  width: 66%;
+  position: relative;
+}
+
+#church_name h1 {
+  position: absolute;
+  margin: 0;
+  font-size: 30px;
+  font-weight: lighter;
+  line-height: 30px;
+  bottom: 0px;
+}
+
+#search_box {
+  width: 34%;
+  position: relative;
+}
+#search_box .icon {
+  position: absolute;
+  font-size: 20px;
+  bottom: 5px;
+  right: 4px;
+  margin-right: 0;
+}
+#search_box form {
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  right: 0;
+}
+#search_box form input {
+  margin: 0;
+  padding-right: 25px;
+  background: transparent;
+}
+
+
+/****************** Navigation */
+#navigation {
+  margin-top: 15px;
+  width: 100%;
+  height: 40px;
+}
+
+#navigation #menu {
+  position: relative;
+  margin: 0;
+  height: 40px;
+}
+
+#navigation .sub-menu {
+  display: none;
+  margin: 0;
+  height: 30px;
+}
+#navigation .current-sub-menu {
+  display: block;
+  width: 100%;
+  position: absolute;
+}
+
+#navigation #menu .menu-item {
+  float: left;
+  height: 40px;
+  text-align: center;
+}
+
+#navigation .sub-menu .sub-menu-items {
+  float: left;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+#navigation #menu .menu-item > .menu-item-wrapper {
+  height: 100%;
+  line-height: 40px;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: lighter;
+}
+#navigation #menu .menu-item > span a,
+#navigation #menu .menu-item.current-list > span,
+#navigation #menu .menu-item > span.menu-item-category {
+  color: white;
+  display: block;
+  padding: 0 15px;
+}
+#navigation #menu .menu-item > span.menu-item-category:hover {
+  cursor: pointer;
+}
+
+#navigation .sub-menu .sub-menu-items > span a {
+  height: 30px;
+  text-align: center;
+  padding: 5px 15px;
+}
+
+#navigation #menu > .menu-item a:hover {
+  text-decoration: none;
+}
+
+
+/****************** Body */
+#body_container {
+  padding-top: 30px;
+}
+#body_container:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#subitems_nav {
+  float: left;
+  width: 30%;
+}
+
+.page-heading {
+  margin-top: 0;
+}
+
+#body {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+#body a:hover {
+  text-decoration: none;
+}
+
+#body .-unite-page-admin a.btn {
+  color: white;
+}
+
+#page_main {
+  max-width:710px;
+}
+
+
+
+/****************** Footer */
+#footer_wrapper, .push {
+  height: 165px;
+  background-color: transparent;
+}
+#footer_wrapper {
+  height: 100%;
+  position: relative;
+}
+
+#footer {
+  width: 1020px;
+  margin: 0 auto 40px auto;
+}
+
+#footer_navigation {
+  display: inline-block;
+  height: 20px;
+  margin: 20px 0;
+}
+
+#footer_navigation #footer_menu {
+  margin: 0;
+}
+
+#footer_navigation .footer-menu-items {
+  float: left;
+  list-style-type: none;
+}
+
+#footer_navigation .menu-item-category {
+  display: none;
+}
+
+#footer_navigation .footer-menu-items a,
+#footer_navigation .footer-menu-items span {
+  color: white;
+  padding-right: 15px;
+}
+
+#footer_address a,
+#footer_address {
+  color: white;
+}
+
+#_unite_save_document {
+  color: white;
+  padding: 1px 10px;
+  text-shadow: 1px 1px 1px black;
+}
+
+
+a.rss-link {
+  position: absolute;
+  top: 0;
+  right: 2.5em;
+  width: 28px;
+  height: 28px;
+  background: url('../images/feed-icon-28x28.png');
+  text-indent: -9999em;
+}
+
+
+legend {
+  border-bottom: 3px solid rgb(66, 66, 66);
+  font-weight: bold;
+  line-height: 1.66em;
+}
+legend > label { font-weight: inherit; }
+
+
+/* Groups */
+
+.group-widget.group-widget-large .group-widget-leaders h6 {
+  line-height: 40px;
+}

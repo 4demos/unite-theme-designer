@@ -1,0 +1,202 @@
+a,p,span,h1,h2,h3 {
+  -webkit-font-smoothing: antialiased;
+}
+#body .btn.btn-primary,
+.modal .btn.btn-primary { color: white; }
+
+/****************** Body and main structure */
+
+.admin #left_container {
+  top: 39px;
+}
+#left_container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -160px;
+  width: 50%;
+}
+#left_container > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+#left_inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 320px;
+  padding-right: 20px;
+  text-align: right;
+  -moz-box-shadow: inset -9px 0 22px -8px #000;
+  -webkit-box-shadow: inset -9px 0 22px -8px #000;
+  box-shadow: inset -9px 0 22px -8px #000;
+}
+
+#right_container {
+  width: 640px;
+  margin: 0 auto;
+  padding-left: 320px;
+}
+#right_inner {
+  padding: 0 15px;
+  position: relative;
+}
+#right_inner a {
+  text-decoration: underline;
+}
+
+/****************** Left side */
+
+/******** Church Name/Logo */
+.-church-name-logo {
+  height: 100px;
+}
+.-church-name-logo h1 {
+  line-height: 30px;
+}
+
+/******** Current User */
+#current_user_wrapper {
+  width: 100%;
+}
+#current_user div {
+  float: right;
+  font-size: 11px;
+}
+.-unite-current-user span {
+  padding: 6px 10px;
+}
+.-unite-current-user a {
+  padding-left: 5px;
+}
+span.-unite-welcome-message {
+  background: none;
+  font-size: 14px;
+}
+.-unite-current-user a {
+  background: none;
+}
+.-unite-link-to-signin:before {
+  font-family: FontAwesome;
+  content: "\f090";
+}
+.-unite-link-to-settings:before {
+  font-family: FontAwesome;
+  content: "\f085";
+}
+.-unite-link-to-signout:before {
+  font-family: FontAwesome;
+  content: "\f011";
+}
+
+/******** Navigation */
+#main_navigation {
+  text-align: right;
+  margin-top: 15px;
+}
+#main_navigation .menu-item {
+  font-size: 30px;
+  line-height: 35px;
+  list-style: none;
+}
+#main_navigation .menu-item.current span {
+  margin-right: -15px;
+}
+#main_navigation .menu-item a,
+#main_navigation .menu-item span {
+  font-weight: lighter;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+#main_navigation .menu-item a:hover {
+  text-decoration: none;
+}
+
+/********** Search */
+#search_box {
+  position: relative;
+  height: 38px;
+  margin: 60px 0;
+}
+#search_box .icon {
+  position: absolute;
+  font-size: 23px;
+  bottom: 8px;
+  right: 3px;
+  z-index: 999;
+}
+#search_box form {
+  position: relative;
+  height: 38px;
+  bottom: 0;
+  right: 0;
+}
+#search_box form input {
+  margin: 0;
+  padding: 0 28px 0 10px;
+  height: 35px;
+  border-radius: 0;
+  border: none;
+}
+
+/********** Footer */
+#footer,
+#footer a {
+  font-size: 12px;
+  font-weight: lighter;
+  line-height: 13px;
+}
+
+/****************** Right side */
+#body .-unite-page-title {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-shadow: 0 0 3px black;
+}
+
+#right_inner .-unite-page-admin a { text-decoration: none; }
+
+/********** Group */
+#body #page_sidebar {
+  margin-right: -70px;
+  -webkit-box-shadow: inset 0px 0px 6px 0px #000;
+}
+#body #page_sidebar .tab:hover {
+  cursor: pointer;
+}
+
+#page_main {
+  max-width:460px;
+}
+
+#body .comment-controls {
+  margin-left: 16px;
+}
+
+a.rss-link {
+  position: absolute;
+  top: 0;
+  right: 2.5em;
+  width: 28px;
+  height: 28px;
+  background: url('../images/feed-icon-28x28.png');
+  text-indent: -9999em;
+}
+
+
+/* Groups */
+
+.group-widget.group-widget-large .group-widget-title-and-summary,
+.group-widget.group-widget-large .group-widget-leaders {
+  float: none;
+  width: auto;
+  padding: 0;
+}
+.group-widget.group-widget-large .group-widget-leaders { line-height: 40px; }
+.group-widget.group-widget-large .group-widget-leaders h6 { display: none; }
+.group-widget.group-widget-large .group-widget-leaders .group-leader { display: inline-block; }

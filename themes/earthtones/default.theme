@@ -1,0 +1,181 @@
+{{#html}}
+<head>
+  <title>{{page/title}} - {{church/name}}</title>
+  <link href='http://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
+  {{#theme}}
+  <style type="text/css">
+    #wrapper a,
+    #footer .footer-subheader,
+    #footer_navigation .footer-menu-items a,
+    #footer_navigation .footer-menu-items span {
+      color: rgb({{linkColor}});
+    }
+    
+    #header { background: url("{{headerBackground}}") no-repeat; }
+    
+    #church_name h1,
+    #quick_info,
+    #quick_info a,
+    #search_box .icon { color: rgb({{headerLinks}}); }
+    
+    #current_user .-unite-link-to-settings,
+    #current_user .-unite-link-to-signout,
+    #current_user .-unite-link-to-signin { background: rgb({{headerAccent}}); }
+    
+    #search_box input::-webkit-input-placeholder { color: rgb({{headerLinks}}); }
+    #search_box input:-moz-placeholder { color: rgb({{headerLinks}}); }
+    #search_box input::-moz-placeholder { color: rgb({{headerLinks}}); }
+    #search_box input:-ms-input-placeholder { color: rgb({{headerLinks}}); }
+    
+    #subitems_nav li .current-child,
+    .-unite-page-title,
+    #body .post .post-title a,
+    #page_sidebar a {
+      color: rgb({{headingColor}});
+      text-shadow: none;
+    }
+    
+    #navigation #menu .menu-item > span a,
+    #navigation #menu .menu-item.current-list > span,
+    #navigation #menu .menu-item > span.menu-item-category {
+      color: rgb({{navigationText}});
+    }
+    
+    #navigation #menu .sub-menu .sub-menu-items a:hover,
+    #navigation #menu .sub-menu .sub-menu-items .menu-item-current {
+      color: rgb({{headerLinks}});
+    }
+    
+    #wrapper a:hover,
+    #current_user .-unite-welcome-message a:hover,
+    #body .post .post-title a:hover { color: rgb({{hoverColor}}); }
+    
+    body { font-family: {{bodyFont}}; }
+    #church_name h1,
+    #navigation,
+    .-unite-page-title { font-family: {{titleFont}}; }
+    
+    #_unite_save_document {
+      background: rgb({{linkColor}});
+    }
+  </style>
+  {{/theme}}
+  <link href="{{theme/path}}/stylesheets/theme.css" media="screen" rel="stylesheet" type="text/css" />
+  {{{unite/head}}}
+</head>
+<body>
+  <div id="header">
+    <div id="header_wrapper">
+      <div id="header_inner">
+        <div id="current_user_wrapper">
+          <div id="current_user">
+            {{{navigation/currentUser}}}
+          </div>
+        </div>
+        <div id="header_container">
+          <div id="church_name">
+            <h1>{{church/name}}</h1>
+          </div>
+          <div id="header_right">
+            <div id="search_box">
+              <span class='icon icon-search'></span>
+              {{{navigation/searchBox}}}
+            </div>
+            <div id="quick_info">
+              {{#church}}
+                {{#if address}}<span class="quick-info-item">{{#linkToMap address}}<span class='icon icon-globe'></span>Directions{{/linkToMap}}</span>{{/if}}
+                {{#if phone}}<span class="quick-info-item"><span class='icon icon-mobile-phone'></span>{{phone}}</span>{{/if}}
+                {{#if email}}<span class="quick-info-item"><a href="mailto:{{email}}"><span class='icon icon-envelope'></span>{{email}}</a></span>{{/if}}
+              {{/church}}
+            </div> <!-- quick_info -->
+          </div> <!-- header_right -->
+        </div> <!-- header_container -->
+      </div> <!-- header_inner -->
+      <div id="navigation">
+        {{#navigation}}
+          <ol id="menu">
+            {{#menuItems}}
+              <li class="menu-item {{#if current}}current-list{{/if}}">
+                {{{menuItem}}}
+                {{#ifAny children}}
+                  <ol class="sub-menu {{#if current}}current-sub-menu{{/if}}">
+                    {{#children}}
+                      <li class="sub-menu-items">{{{menuItem}}}</li>
+                    {{/children}}
+                  </ol>
+                {{/ifAny}}
+              </li>
+            {{/menuItems}}
+          </ol>
+        {{/navigation}}
+      </div>
+    </div> <!-- header_wrapper -->
+  </div> <!-- header -->
+  <div id="wrapper">
+    <div id="body_container">
+      {{{page/alerts}}}
+      <!-- <div id="subitems_nav">
+        
+      </div> -->
+      
+      <div id="subitems_nav" class="{{#ifAny navigation/currentCategory}}has-subitems{{/ifAny}}">
+        <div>
+          <ul>
+            {{#each navigation/currentCategory}}
+              <li>{{{this}}}</li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+      
+      <div id="body" class="{{#ifAny navigation/currentCategory}}page-has-subitems{{/ifAny}}">
+        {{#page}}
+          {{{admin}}}
+          <h1 class="page-heading">{{{heading}}}</h1>
+          {{{body}}}
+        {{/page}}
+      </div>
+    </div>
+    <div class="push"></div>
+  </div>
+  <div id="footer_wrapper">
+    <div id="footer">
+      <div id="footer_navigation">
+        {{#navigation}}
+          <ol id="footer_menu">
+            {{#menuItems}}
+              {{#ifNone children}}
+                <li class="footer-menu-items">
+                  <span>{{{menuItem}}}<span>
+                </li>
+              {{/ifNone}}
+            {{/menuItems}}
+          </ol>
+        {{/navigation}}
+      </div>
+      
+      <hr class="dashed">
+      
+      <div id="footer_info">
+        <div id="footer_address">
+          <span class="footer-subheader">CONTACT INFO</span>
+          {{#church}}
+            {{name}}<br />
+            {{#if address}}
+              {{#linkToMap address}}
+                {{#lines address}}
+                  {{this}}<br />
+                {{/lines}}
+              {{/linkToMap}}<br />
+            {{/if}}
+          {{/church}}
+        </div>
+      </div>
+      
+      <div id="footer_copy">&copy; Copyright 2013 {{church/name}}</div>
+    </div>
+  </div>
+  {{{unite/scripts}}}
+  <script src="{{theme/path}}/javascripts/theme.js" type="text/javascript" charset="utf-8"></script>
+</body>
+{{/html}}

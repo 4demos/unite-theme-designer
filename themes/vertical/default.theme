@@ -1,0 +1,146 @@
+{{#html}}
+<head>
+  <title>{{page/title}} - {{church/name}}</title>
+  {{{unite/head}}}
+  <link href='http://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Economica:400' rel='stylesheet' type='text/css'>
+  {{#theme}}
+  <style type="text/css">
+    #right_container a { color: rgb({{linkColor}}); }
+    #right_container a:hover { color: rgb({{hoverColor}}); }
+    
+    #left_container a,
+    .-unite-current-user span { color: rgb({{leftSideLinks}}); }
+    .-unite-current-user a,
+    #search_box .icon,
+    #search_box form input {
+      color: rgb({{leftSideLinks}});
+      background: rgb({{leftSideAccent}});
+    }
+    #left_container > div { background: url('{{path}}/images/vertical-darkbg.png'), rgb({{leftSideBackground}}); }
+    
+    #search_box input::-webkit-input-placeholder { color: rgb({{leftSideLinks}}); }
+    #search_box input:-moz-placeholder { color: rgb({{leftSideLinks}}); }
+    #search_box input::-moz-placeholder { color: rgb({{leftSideLinks}}); }
+    #search_box input:-ms-input-placeholder { color: rgb({{leftSideLinks}}); }
+    
+    #body #page_sidebar .tab:hover { background: rgb({{leftSideLinks}}); }
+    
+    .-unite-current-user span,
+    #body #page_sidebar { background: rgb({{leftSideAccent}}); }
+    
+    span.-unite-welcome-message,
+    #body span.-unite-welcome-message a,
+    span.-unite-welcome-message a:hover,
+    #footer,
+    #footer a,
+    #body #page_sidebar .tab:hover,
+    #body #page_sidebar .tab:hover a { color: rgb({{leftSideAccent}}); }
+    
+    #main_navigation .menu-item a,
+    #main_navigation .menu-item span {
+      color: rgb({{navigation}});
+      font-family: {{navigationFont}};
+    }
+    
+    #body .-unite-page-title { color: rgb({{headingColor}}); }
+    
+    #body { background-color: rgb({{rightSideBackground}}); }
+    .-church-name-logo h1,
+    #main_navigation .menu-item.current span { color: rgb({{activeNavigation}}); }
+    
+    #body .-unite-page-title { font-family: {{headingFont}}; }
+    #right_container { font-family: {{bodyFont}}; }
+    
+    #_unite_save_document {
+      color: rgb({{leftSideLinks}}) !important;
+      background: rgb({{leftSideAccent}});
+    }
+    
+    .change-role,
+    .-email-group,
+    .-email-selected-members {
+      margin-left: 3px !important;
+    }
+  </style>
+  {{/theme}}
+  <link href="{{theme/path}}/stylesheets/theme.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body id="body">
+  <div id="left_container">
+    <div>
+      <div id="left_inner">
+        <div class="-church-name-logo">
+          <h1>{{church/name}}</h1>
+        </div>
+        
+        <div id="current_user_wrapper">
+          <div id="current_user">
+            {{{navigation/currentUser}}}
+          </div>
+        </div>
+        
+        <div><!-- navigation -->
+          <br>
+          {{#navigation}}
+            <ol id="main_navigation">
+              {{#menuItems}}
+                {{#ifNone children}}
+                  <li class="menu-item {{#if current}}current{{/if}}">
+                    {{{menuItem}}}
+                  </li>
+                {{/ifNone}}
+              {{/menuItems}}
+            </ol>
+          {{/navigation}}
+        </div>
+        
+        <div id="search_box">
+          <span class='icon icon-search'></span>
+          {{{navigation/searchBox}}}
+        </div>
+        
+        <div id="footer"><!-- footer -->
+          {{#church}}
+            <span>{{name}}</span><br />
+            {{#if address}}
+              {{#linkToMap address}}
+                {{#lines address}}
+                  {{this}}
+                {{/lines}}
+              {{/linkToMap}}<br />
+            {{/if}}
+            {{#if phone}}
+              <a href="tel:{{phone}}">{{phone}}</a><br />
+            {{/if}}
+            {{#if email}}
+              <a href="mailto:{{this}}">{{email}}</a>
+            {{/if}}
+          {{/church}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="right_container">
+    <div id="right_inner">
+      <div><!-- body -->
+        {{#page}}
+          {{{alerts}}}
+          {{{admin}}}
+          <h1>{{{heading}}}</h1>
+          {{{body}}}
+        {{/page}}
+      </div>
+    </div>
+  </div>
+  {{{unite/scripts}}}
+  <script type="text/javascript" charset="utf-8">
+    $("#main_navigation").find('a').hover(function(){
+      $(this).filter(":not(:animated)").animate({marginRight: "-15px", color: "rgb({{theme/activeNavigation}})" });
+    }, function() {
+      $(this).animate({ marginRight: "0", color: "rgb({{theme/navigation}})" })
+    });
+  </script>
+  <script src="{{theme/path}}/javascripts/theme.js" type="text/javascript" charset="utf-8"></script>
+</body>
+{{/html}}

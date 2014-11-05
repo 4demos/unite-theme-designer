@@ -1,0 +1,185 @@
+---
+name: Urban
+notes: |
+  This theme uses a sans serif font and incorporates flexible design and color schemes.
+options:
+  "Link Color": :color
+  "Header Links": :color
+  "Header Accent": :color
+  "Navigation": :color
+  "Active Navigation": :color
+  "Heading Color": :color
+  "Hover Color": :color
+  "Background Color": :color
+  "Footer Background": :color
+  "Heading Font": [:option, "Arial", "Tahoma", "Trebuchet MS", "Verdana"]
+  "Body Font": [:option, "Arial", "Tahoma", "Trebuchet MS", "Verdana"]
+presets:
+  "Fresh":
+    "Link Color": "255, 153, 0" #ff9900 (Orange)
+    "Header Links": "5, 151, 184" #0597b8 (Ocean)
+    "Header Accent": "5, 151, 184" #0597b8 (Ocean)
+    "Navigation": "66, 66, 66" #424242 (Dark Slate)
+    "Active Navigation": "255, 153, 0" #ff9900 (Orange)
+    "Heading Color": "5, 151, 184" #0597b8 (Ocean)
+    "Hover Color": "66, 66, 66" #424242 (Dark Slate)
+    "Background Color": "206, 221, 225" #CEDDE1 (Light Blue)
+    "Footer Background": "66, 66, 66" #424242 (Dark Slate)
+    "Heading Font": "Trebuchet MS"
+    "Body Font": "Trebuchet MS"
+  "Moss":
+    "Link Color": "169, 164, 14" #a9a40e (Green)
+    "Header Links": "117, 116, 73" #757449 (Moss)
+    "Header Accent": "117, 116, 73" #757449 (Moss)
+    "Navigation": "75, 73, 11" #4B490B (Clover)
+    "Active Navigation": "169, 164, 14" #a9a40e (Green)
+    "Heading Color": "169, 164, 14"
+    "Hover Color": "66, 66, 66" #424242 (Dark Slate)
+    "Footer Background": "59, 58, 47" #3b3a2f (Almost Slate)
+    "Background Color": "246, 245, 225" #F6F5E1 (Sand)
+    "Heading Font": "Trebuchet MS"
+    "Body Font": "Trebuchet MS"
+  "Metal":
+    "Link Color": "174, 178, 31" #aeb21f (Nuclear Green)
+    "Header Links": "155, 155, 155" #9b9b9b (Slate)
+    "Header Accent": "155, 155, 155" #9b9b9b (Slate)
+    "Navigation": "94, 119, 133" #5e7785 (Metal)
+    "Active Navigation": "174, 178, 31" #aeb21f (Nuclear Green)
+    "Heading Color": "115, 118, 4" #737604 (Dark Green)
+    "Hover Color": "66, 66, 66" #424242 (Dark Slate)
+    "Background Color": "231, 231, 231" #E7E7E7 (Sand)
+    "Footer Background": "59, 58, 47" #3b3a2f (Almost Slate)
+    "Heading Font": "Trebuchet MS"
+    "Body Font": "Trebuchet MS"
+  "Desert":
+    "Link Color": "211, 94, 6" #d35e06 (Tangerine)
+    "Header Links": "117, 59, 15" #753b0f (Burnt Orange)
+    "Header Accent": "117, 59, 15" #753b0f (Burnt Orange)
+    "Navigation": "71, 53, 37" #473525 (Brown)
+    "Active Navigation": "211, 94, 6" #d35e06 (Tangerine)
+    "Heading Color": "117, 59, 15" #753b0f (Burnt Orange)
+    "Hover Color": "66, 66, 66" #424242 (Dark Slate)
+    "Background Color": "241, 241, 233" #f1f1e9 (Cream)
+    "Footer Background": "71, 53, 37" #473525 (Other Brown)
+    "Heading Font": "Trebuchet MS"
+    "Body Font": "Trebuchet MS"
+  "Slate Blue":
+    "Link Color": "62, 98, 124" #3e627c (Navy)
+    "Header Links": "62, 98, 124" #3e627c (Navy)
+    "Header Accent": "62, 98, 124" #3e627c (Navy)
+    "Navigation": "38, 55, 62" #26373e (Dark Navy)
+    "Active Navigation": "125, 135, 145" #7d8791 (Light Navy)
+    "Heading Color": "38, 55, 62" #26373e (Dark Navy)
+    "Hover Color": "38, 55, 62" #26373e (Dark Navy)
+    "Background Color": "125, 135, 145" #7d8791 (Light Navy)
+    "Footer Background": "125, 135, 145" #7d8791 (Light Navy)
+    "Heading Font": "Trebuchet MS"
+    "Body Font": "Trebuchet MS" 
+  "Gothenburg":
+    "Link Color": "69, 125, 151" #457D97 (Navy)
+    "Header Links": "69, 125, 151" #457D97 (Navy)
+    "Header Accent": "204, 178, 76" #CCB24C (Mustard)
+    "Navigation": "69, 125, 151" #457D97 (Navy)
+    "Active Navigation": "204, 178, 76" #CCB24C (Mustard)
+    "Heading Color": "69, 125, 151" #457D97 (Navy)
+    "Hover Color": "33, 33, 33" #212121 (Black)
+    "Background Color": "247, 214, 131" #F7D683 (Gold)
+    "Footer Background": "247, 214, 131" #F7D683 (Gold)
+    "Heading Font": "Verdana"
+    "Body Font": "Verdana" 
+  "Terry Mint":
+    "Link Color": "232, 89, 28" #E8591C (Orange)
+    "Header Links": "232, 89, 28" #E8591C (Orange)
+    "Header Accent": "127, 184, 176" #7FB8B0 (Teal)
+    "Navigation": "51, 44, 38" #332C26 (Dark Brown)
+    "Active Navigation": "127, 184, 176" #7FB8B0 (Teal)
+    "Heading Color": "51, 44, 38" #332C26 (Dark Brown)
+    "Hover Color": "51, 44, 38" #332C26 (Dark Brown)
+    "Background Color": "232, 89, 28" #E8591C (Orange)
+    "Footer Background": "232, 89, 28" #E8591C (Orange)
+    "Heading Font": "Lucida Sans"
+    "Body Font": "Lucida Sans"
+  "Espresso":
+    "Link Color": "12, 165, 176" #0CA5B0 (Teal)
+    "Header Links": "12, 165, 176" #0CA5B0 (Teal)
+    "Header Accent": "12, 165, 176" #0CA5B0 (Teal)
+    "Navigation": "78, 63, 48" #4E3F30 (Black)
+    "Active Navigation": "12, 165, 176" #0CA5B0 (Teal)
+    "Heading Color": "78, 63, 48" #4E3F30 (Black)
+    "Hover Color": "78, 63, 48" #4E3F30 (Black)
+    "Background Color": "254, 254, 235" #FEFEEB (White)
+    "Footer Background": "254, 254, 235" #FEFEEB (White)
+    "Heading Font": "Arial"
+    "Body Font": "Arial" 
+  "Dorylas":
+    "Link Color": "71, 207, 235" #47CFEB (Blue)
+    "Header Links": "71, 207, 235" #47CFEB (Blue)
+    "Header Accent": "71, 207, 235" #47CFEB (Blue)
+    "Navigation": "71, 207, 235" #47CFEB (Blue)
+    "Active Navigation": "33, 33, 33" #212121 (Black)
+    "Heading Color": "33, 33, 33" #212121 (Black)
+    "Hover Color": "33, 33, 33" #212121 (Black)
+    "Background Color": "200, 224, 82" #C8E052 (Green)
+    "Footer Background": "200, 224, 82" #C8E052 (Green)
+    "Heading Font": "Impact"
+    "Body Font": "Lucida Sans" 
+  "Union Jack":
+    "Link Color": "220, 1, 43" #DC012B (Red)
+    "Header Links": "220, 1, 43" #DC012B (Red)
+    "Header Accent": "45, 33, 55" #2D2137 (Navy)
+    "Navigation": "45, 33, 55" #2D2137 (Navy)
+    "Active Navigation": "220, 1, 43" #DC012B (Red)
+    "Heading Color": "45, 33, 55" #2D2137 (Navy)
+    "Hover Color": "45, 33, 55" #2D2137 (Navy)
+    "Background Color": "220, 1, 43" #DC012B (Red)
+    "Footer Background": "220, 1, 43" #DC012B (Red)
+    "Heading Font": "Tahoma"
+    "Body Font": "Tahoma" 
+  "Berry Blue":
+    "Link Color": "73, 150, 171" #4996AB (Blue)
+    "Header Links": "73, 150, 171" #4996AB (Blue)
+    "Header Accent": "125, 25, 53" #7D1935 (Raspberry)
+    "Navigation": "125, 25, 53" #7D1935 (Raspberry)
+    "Active Navigation": "73, 150, 171" #4996AB (Blue)
+    "Heading Color": "125, 25, 53" #7D1935 (Raspberry)
+    "Hover Color": "125, 25, 53" #7D1935 (Raspberry)
+    "Background Color": "73, 150, 171" #4996AB (Blue)
+    "Footer Background": "73, 150, 171" #4996AB (Blue)
+    "Heading Font": "Trebuchet MS"
+    "Body Font": "Trebuchet MS"
+  "Bee Hive":
+    "Link Color": "255, 198, 34" #FFC622 (Gold)
+    "Header Links": "255, 198, 34" #FFC622 (Gold)
+    "Header Accent": "0, 0, 0" #000000 (Black)
+    "Navigation": "0, 0, 0" #000000 (Black)
+    "Active Navigation": "255, 198, 34" #FFC622 (Gold)
+    "Heading Color": "0, 0, 0" #000000 (Black)
+    "Hover Color": "0, 0, 0" #000000 (Black)
+    "Background Color": "255, 198, 34" #FFC622 (Gold)
+    "Footer Background": "255, 198, 34" #FFC622 (Gold)
+    "Heading Font": "Trebuchet MS"
+    "Body Font": "Trebuchet MS"
+  "Coconut Lime":
+    "Link Color": "32, 76, 87" #204C57 (Navy)
+    "Header Links": "184, 212, 50" #B8D432 (Lime)
+    "Header Accent": "32, 76, 87" #204C57 (Navy)
+    "Navigation": "32, 76, 87" #204C57 (Navy)
+    "Active Navigation": "184, 212, 50" #B8D432 (Lime)
+    "Heading Color": "32, 76, 87" #204C57 (Navy)
+    "Hover Color": "184, 212, 50" #B8D432 (Lime)
+    "Background Color": "184, 212, 50" #B8D432 (Lime)
+    "Footer Background": "184, 212, 50" #B8D432 (Lime)
+    "Heading Font": "Trebuchet MS"
+    "Body Font": "Trebuchet MS"
+  "Black and White":
+    "Link Color": "171, 171, 171" #ABABAB (Silver)
+    "Header Links": "0, 0, 0" #000000 (Black)
+    "Header Accent": "0, 0, 0" #000000 (Black)
+    "Navigation": "171, 171, 171" #ABABAB (Silver)
+    "Active Navigation": "0, 0, 0" #000000 (Black)
+    "Heading Color": "0, 0, 0" #000000 (Black)
+    "Hover Color": "0, 0, 0" #000000 (Black)
+    "Background Color": "171, 171, 171" #ABABAB (Silver)
+    "Footer Background": "171, 171, 171" #ABABAB (Silver)
+    "Heading Font": "Arial"
+    "Body Font": "Arial"

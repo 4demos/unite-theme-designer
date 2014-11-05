@@ -1,0 +1,204 @@
+---
+name: Ribbon
+notes: |
+  The Ribbon theme supports a custom banner image that is 910px by 144px.
+  It gives a lot of control over typefaces and colors.
+options:
+  "Banner": :file
+  "Ribbon Color": :color
+  "Stripe Color": :color
+  "Background Color": :color
+  "Selection Color": :color
+  "Hover Color": :color
+  "Heading Color": :color
+  "Link Color": :color
+  "Body Font": [:option, "Arial", "Georgia", "Lucida Sans", "Palatino", "Tahoma", "Times New Roman", "Trebuchet MS", "Verdana", "Impact"]
+  "Heading Font": [:option, "Arial", "Georgia", "Lucida Sans", "Palatino", "Tahoma", "Times New Roman", "Trebuchet MS", "Verdana"]
+presets:
+  "Gutenberg":
+    "Banner": ""
+    "Ribbon Color": "33, 33, 33" #212121 (Coal)
+    "Stripe Color": "112, 112, 112" #707070 (Pewter)
+    "Background Color": "53, 53, 53" #353535 (Iron)
+    "Selection Color": "207, 48, 0" #cf3000 (Fire Engine)
+    "Hover Color": "74, 74, 74" #4a4a4a (Iron)
+    "Heading Color": "148, 32, 0" #942000 (Cherry)
+    "Link Color": "148, 32, 0" #942000 (Cherry)
+    "Body Font": "Times New Roman"
+    "Heading Font": "Times New Roman"
+  "Mount of Olives":
+    "Banner": "/themes/ribbon/assets/sample_church.jpg"
+    "Ribbon Color": "79, 87, 53" #4f5735 (Olive Leaf)
+    "Stripe Color": "157, 160, 106" #9da069 (Pea Soup)
+    "Background Color": "51, 51, 51" #333333 (Slate)
+    "Selection Color": "125, 128, 73" #7d8049 (Olive)
+    "Hover Color": "157, 160, 105" #9da069 (Light Olive)
+    "Heading Color": "140, 128, 112" #8c8070 (Taupe)
+    "Link Color": "79, 87, 53" #4f5735 (Olive Leaf)
+    "Body Font": "Trebuchet"
+    "Heading Font": "Trebuchet"
+  "Billiards":
+    "Banner": "/themes/ribbon/assets/sample_church.jpg"
+    "Ribbon Color": "33, 33, 33" #212121 (Coal)
+    "Stripe Color": "16, 93, 0" #105d00 (Grass)
+    "Background Color": "45, 37, 26" #2d251a (Mulch)
+    "Selection Color": "103, 152, 1" #679801 (Spring Green)
+    "Hover Color": "59, 123, 1" #3b7b01 (Green Apple)
+    "Heading Color": "72, 60, 46" #483c2e (Milk Chocolate)
+    "Link Color": "59, 123, 1" #3b7b01 (Green Apple)
+    "Body Font": "Trebuchet"
+    "Heading Font": "Trebuchet"
+  "Red Carpet":
+    "Banner": "/themes/ribbon/assets/sample_church.jpg"
+    "Ribbon Color": "33, 33, 33" #212121 (Coal)
+    "Stripe Color": "92, 4, 13" #5c040d (Red Carpet)
+    "Background Color": "62, 72, 83" #3e4853 (Denim)
+    "Selection Color": "85, 101, 121" #556579 (Country Kitchen)
+    "Hover Color": "71, 81, 94" #47515e (Light Denim)
+    "Heading Color": "49, 64, 84" #314054 (Lake)
+    "Link Color": "124, 8, 29" #7c081d (Cherry Lipstick)
+    "Body Font": "Trebuchet"
+    "Heading Font": "Trebuchet"
+  "Seaside":
+    "Banner": ""
+    "Ribbon Color": "107, 93, 77" #6B5D4D (Black)
+    "Stripe Color": "251,238,211" #FBEED3 (Honey Milk)
+    "Background Color": "66, 147, 152" #429398 (Teal)
+    "Selection Color": "176, 161, 143" #B0A18F (Silver)
+    "Hover Color": "223, 205, 180" #DFCDB4 (Silver Tan)
+    "Heading Color": "107, 93, 77" #6B5D4D (Black)
+    "Link Color": "127, 184, 176" #7FB8B0 (Light Teal)
+    "Body Font": "Lucida Sans"
+    "Heading Font": "Lucida Sans"
+  "Slate Blue":
+    "Banner": "/themes/ribbon/assets/sample_church.jpg"
+    "Ribbon Color": "38, 55, 62" #26373e (Dark Navy)
+    "Stripe Color": "62, 98, 124" #3e627c (Navy)
+    "Background Color": "255, 255, 255" #ffffff (White)
+    "Selection Color": "62, 98, 124" #3e627c (Navy)
+    "Hover Color": "0, 96, 170" #0060aa (Blue)
+    "Heading Color": "38, 55, 62" #26373e (Dark Navy)
+    "Link Color": "62, 98, 124" #3e627c (Navy)
+    "Body Font": "Trebuchet MS"
+    "Heading Font": "Trebuchet MS"
+  "Gothenburg":
+    "Banner": ""
+    "Ribbon Color": "204, 178, 76" #CCB24C (Mustard)
+    "Stripe Color": "247, 214, 131" #F7D683 (Gold)
+    "Background Color": "69, 125, 151" #457D97 (Navy)
+    "Selection Color": "247, 214, 131" #F7D683 (Gold)
+    "Hover Color": "247, 214, 131" #F7D683 (Gold)
+    "Heading Color": "33, 33, 33" #212121 (Black)
+    "Link Color": "204, 178, 76" #CCB24C (Mustard)
+    "Body Font": "Verdana"
+    "Heading Font": "Verdana"
+  "Terry Mint":
+    "Banner": ""
+    "Ribbon Color": "127, 184, 176" #7FB8B0 (Teal)
+    "Stripe Color": "232, 89, 28" #E8591C (Orange)
+    "Background Color": "51, 44, 38" #332C26 (Dark Brown)
+    "Selection Color": "232, 89, 28" #E8591C (Orange)
+    "Hover Color": "232, 89, 28" #E8591C (Orange)
+    "Heading Color": "51, 44, 38" #332C26 (Dark Brown)
+    "Link Color": "127, 184, 176" #7FB8B0 (Teal)
+    "Body Font": "Lucida Sans"
+    "Heading Font": "Lucida Sans"
+  "Desert Sand":
+    "Banner": ""
+    "Ribbon Color": "74, 64, 61" #4A403D (Black)
+    "Stripe Color": "255, 241, 193" #FFF1C1 (Honey Milk)
+    "Background Color": "166, 154, 144" #A69A90 (Silver)
+    "Selection Color": "234, 128, 76" #EA804C (Orange)
+    "Hover Color": "250, 207, 125" #FACF7D (Light Orange)
+    "Heading Color": "74, 64, 61" #4A403D (Black)
+    "Link Color": "234, 128, 76" #EA804C (Orange)
+    "Body Font": "Arial"
+    "Heading Font": "Arial"
+  "Espresso":
+    "Banner": ""
+    "Ribbon Color": "78, 63, 48" #4E3F30 (Black)
+    "Stripe Color": "254, 254, 235" #FEFEEB (White)
+    "Background Color": "12, 165, 176" #0CA5B0 (Teal)
+    "Selection Color": "165, 179, 170" #A5B3AA (Silver)
+    "Hover Color": "165, 179, 170" #A5B3AA (Silver)
+    "Heading Color": "78, 63, 48" #4E3F30 (Black)
+    "Link Color": "12, 165, 176" #0CA5B0 (Teal)
+    "Body Font": "Arial"
+    "Heading Font": "Arial"
+  "Dorylas":
+    "Banner": ""
+    "Ribbon Color": "71, 207, 235" #47CFEB (Blue)
+    "Stripe Color": "255, 255, 255" #FFFFFF (White)
+    "Background Color": "200, 224, 82" #C8E052 (Green)
+    "Selection Color": "33, 33, 33" #212121 (Black)
+    "Hover Color": "212, 241, 247" #D4F1F7 (Light Blue)
+    "Heading Color": "33, 33, 33" #212121 (Black)
+    "Link Color": "71, 207, 235" #47CFEB (Blue)
+    "Body Font": "Lucida Sans"
+    "Heading Font": "Impact"
+  "Union Jack":
+    "Banner": ""
+    "Ribbon Color": "220, 1, 43" #DC012B (Red)
+    "Stripe Color": "246, 244, 249" #F6F4F9 (White)
+    "Background Color": "45, 33, 55" #2D2137 (Navy)
+    "Selection Color": "45, 33, 55" #2D2137 (Navy)
+    "Hover Color": "45, 33, 55" #2D2137 (Navy)
+    "Heading Color": "40, 37, 54" #282536 (Lighter Navy)
+    "Link Color": "220, 1, 43" #DC012B (Red)
+    "Body Font": "Tahoma"
+    "Heading Font": "Tahoma"
+  "Log Cabin":
+    "Banner": ""
+    "Ribbon Color": "26, 18, 2" #1A1202 (Black)
+    "Stripe Color": "245, 255, 192" #F5FFC0 (Tan)
+    "Background Color": "83, 13, 13" #530D0D (Burgundy)
+    "Selection Color": "52, 42, 20" #342A14 (Dark Brown)
+    "Hover Color": "52, 42, 20" #342A14 (Dark Brown)
+    "Heading Color": "26, 18, 2" #1A1202 (Black)
+    "Link Color": "83, 13, 13" #530D0D (Burgundy)
+    "Body Font": "Arial"
+    "Heading Font": "Georgia"
+  "Pumpkin Spice":
+    "Banner": ""
+    "Ribbon Color": "59, 55, 56" #3b3738 (Black)
+    "Stripe Color": "253, 243, 231" #fdf3e7 (Tan)
+    "Background Color": "198, 61, 15" #c63d0f (Orange)
+    "Selection Color": "126, 143, 124" #7e8f7c (Green)
+    "Hover Color": "126, 143, 124" #7e8f7c (Green)
+    "Heading Color": "59, 55, 56" #3b3738 (Black)
+    "Link Color": "59, 55, 56" #3b3738 (Black)
+    "Body Font": "Verdana"
+    "Heading Font": "Verdana"
+  "Berry Blue":
+    "Banner": ""
+    "Ribbon Color": "73, 150, 171" #4996AB (Blue)
+    "Stripe Color": "245, 243, 237" #F5F3ED (White)
+    "Background Color": "125, 25, 53" #7D1935 (Raspberry)
+    "Selection Color": "125, 25, 53" #7D1935 (Raspberry)
+    "Hover Color": "125, 25, 53" #7D1935 (Raspberry)
+    "Heading Color": "125, 25, 53" #7D1935 (Raspberry)
+    "Link Color": "73, 150, 171" #4996AB (Blue)
+    "Body Font": "Trebuchet MS"
+    "Heading Font": "Trebuchet MS"
+  "Bee Hive":
+    "Banner": ""
+    "Ribbon Color": "0, 0, 0" #000000 (Black)
+    "Stripe Color": "79, 78, 78" #4F4E4E (Dark Silver)
+    "Background Color": "255, 198, 34" #FFC622 (Gold)
+    "Selection Color": "79, 78, 78" #4F4E4E (Dark Silver)
+    "Hover Color": "255, 198, 34" #FFC622 (Gold)
+    "Heading Color": "79, 78, 78" #4F4E4E (Dark Silver)
+    "Link Color": "255, 198, 34" #FFC622 (Gold)
+    "Body Font": "Trebuchet MS"
+    "Heading Font": "Trebuchet MS"
+  "Coconut Lime":
+    "Banner": ""
+    "Ribbon Color": "184, 212, 50" #B8D432 (Lime)
+    "Stripe Color": "32, 76, 87" #204C57 (Navy)
+    "Background Color": "19, 39, 48" #132730 (Black)
+    "Selection Color": "32, 76, 87" #204C57 (Navy)
+    "Hover Color": "32, 76, 87" #204C57 (Navy)
+    "Heading Color": "19, 39, 48" #132730 (Black)
+    "Link Color": "184, 212, 50" #B8D432 (Lime)
+    "Body Font": "Trebuchet MS"
+    "Heading Font": "Trebuchet MS"

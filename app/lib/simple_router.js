@@ -6,7 +6,7 @@ var YAML = require('yamljs');
 var inflection = require('inflection');
 
 function renderDesignerTools(params) {
-  var html = '<div style="position:fixed; background:rgba(0,0,0,0.8); bottom:0; left:0; width:100%; height:40px; line-height:40px; padding:4px 12px;">';
+  var html = '<div style="position:fixed; background:rgba(0,0,0,0.8); bottom:0; left:0; width:100%; height:40px; line-height:40px; padding:4px 12px; z-index:9999;">';
   html += '<label style="color:white; margin:0; padding:0; line-height:inherit; display:inline;">Theme: <select style="margin: 0;" onchange="document.cookie = \'theme=\' + $(window.event.target).val(); window.location.reload();">';
   for(var i=0, ii=params.themes.length; i<ii; i++) {
     html += '<option'

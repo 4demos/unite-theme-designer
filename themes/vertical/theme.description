@@ -1,0 +1,136 @@
+---
+name: Vertical
+notes: |
+  The Vertical theme uses an asymmetrical design and stacked navigation to create a dynamic look and feel.
+  It does not support subnavigation.
+options:
+  "Link Color": :color
+  "Left Side Links": :color
+  "Left Side Accent": :color
+  "Right Side Background": :color
+  "Left Side Background": :color
+  "Heading Color": :color
+  "Hover Color": :color
+  "Navigation": :color
+  "Active Navigation": :color
+  "Navigation Font": [:option, "Economica", "Amatic SC", "Arial"]
+  "Heading Font": [:option, "Economica", "Amatic SC", "Arial"]
+  "Body Font": [:option, "Arial"]
+presets:
+  "Army":
+    "Link Color": "50, 56, 42" #32382a (Dark Green)
+    "Left Side Links": "50, 56, 42" #32382a (Dark Green)
+    "Left Side Accent": "200, 213, 172" #c8d5ac (Cream Green)
+    "Right Side Background": "238, 243, 230" #eef3e6 (Off White)
+    "Left Side Background": "46, 51, 38" #2E3326 (Green)
+    "Heading Color": "228, 250, 73" #e4fa49 (Lime)
+    "Hover Color": "51, 51, 51" #333333 (Slate)
+    "Navigation": "228, 250, 73" #e4fa49 (Lime)
+    "Active Navigation": "238, 243, 230" #eef3e6 (Off White)
+    "Navigation Font": "Economica"
+    "Heading Font": "Verdana"
+    "Body Font": "Helvetica Neue"
+  "Sorbet":
+    "Link Color": "234, 85, 67" #ea5543 (Pink)
+    "Left Side Links": "51, 43, 38" #332B26 (Dark Brown)
+    "Left Side Accent": "213, 184, 172" #d5b8ac (Pink Cream)
+    "Right Side Background": "243, 235, 230" #f3ebe6 (Off White)
+    "Left Side Background": "51, 43, 38" #332B26 (Dark Brown)
+    "Heading Color": "248, 91, 72" #f85b48 (Pink)
+    "Hover Color": "51, 51, 51" #333333 (Slate)
+    "Navigation": "248, 91, 72" #f85b48 (Pink)
+    "Active Navigation": "243, 235, 230" #f3ebe6 (Off White)
+    "Navigation Font": "Economica"
+    "Heading Font": "Verdana"
+    "Body Font": "Helvetica Neue"
+  "Sun Stare":
+    "Link Color": "254, 167, 0" #fea700 (Light Orange)
+    "Left Side Links": "166, 92, 14" #a65c0e (Dark Orange)
+    "Left Side Accent": "254, 167, 0" #fea700 (Light Orange)
+    "Right Side Background": "255, 255, 255" #FFFFFF (White)
+    "Left Side Background": "95, 35, 11" #953D0C (Rust)
+    "Heading Color": "140, 44, 2" #8c2c02 (Sienna)
+    "Hover Color": "51, 51, 51" #333333 (Slate)
+    "Navigation": "244, 109, 1" #f46d01 (Orange)
+    "Active Navigation": "254, 167, 0" #fea700 (Light Orange)
+    "Navigation Font": "Economica"
+    "Heading Font": "Verdana"
+    "Body Font": "Helvetica Neue"
+  "Slate":
+    "Link Color": "60, 158, 200" #3C9EC8 (Blue)
+    "Left Side Links": "70, 116, 136" #467488 (Dark Blue)
+    "Left Side Accent": "144, 157, 163" #909da3 (Light Slate)
+    "Right Side Background": "212, 213, 213" #d4d5d5 (Light Grey)
+    "Left Side Background": "44, 49, 51" #2C3133 (Dark Grey)
+    "Heading Color": "101, 188, 227" #65bce3 (Blue)
+    "Hover Color": "51, 51, 51" #333333 (Slate)
+    "Navigation": "85, 97, 103" #556167 (Blue Slate)
+    "Active Navigation": "225, 238, 245" #e1eef5 (Off White)
+    "Navigation Font": "Economica"
+    "Heading Font": "Verdana"
+    "Body Font": "Helvetica Neue"
+  "Sandstone":
+    "Link Color": "107, 93, 77" #6B5D4D (Brown)
+    "Left Side Links": "107, 93, 77" #6B5D4D (Brown)
+    "Left Side Accent": "255, 250, 230" #FFFAE6 (Tan White)
+    "Right Side Background": "255, 250, 230" #FFFAE6 (Tan White)
+    "Left Side Background": "41, 31, 21" #291F15 (Dark Brown)
+    "Heading Color": "107, 93, 77" #6B5D4D (Brown)
+    "Hover Color": "107, 93, 77" #6B5D4D (Brown)
+    "Navigation": "107, 93, 77" #6B5D4D (Brown)
+    "Active Navigation": "251,238,211" #FBEED3 (Light Tan)
+    "Navigation Font": "Economica"
+    "Heading Font": "Tahoma"
+    "Body Font": "Tahoma"
+  "Black and White":
+    "Link Color": "0, 0, 0" #000000 (Black)
+    "Left Side Links": "0, 0, 0" #000000 (Black)
+    "Left Side Accent": "255, 255, 255" #FFFFFF (White)
+    "Right Side Background": "255, 255, 255" #FFFFFF (White)
+    "Left Side Background": "0, 0, 0" #000000 (Black)
+    "Heading Color": "255, 255, 255" #FFFFFF (White)
+    "Hover Color": "0, 0, 0" #000000 (Black)
+    "Navigation": "171, 171, 171" #ABABAB (Silver)
+    "Active Navigation": "255, 255, 255" #FFFFFF (White)
+    "Navigation Font": "Economica"
+    "Heading Font": "Arial"
+    "Body Font": "Arial"
+  "Union Jack":
+    "Link Color": "220, 1, 43" #DC012B (Red)
+    "Left Side Links": "45, 33, 55" #2D2137 (Navy)
+    "Left Side Accent": "246, 244, 249" #F6F4F9 (White)
+    "Right Side Background": "246, 244, 249" #F6F4F9 (White)
+    "Left Side Background": "45, 33, 55" #2D2137 (Navy)
+    "Heading Color": "220, 1, 43" #DC012B (Red)
+    "Hover Color": "45, 33, 55" #2D2137 (Navy)
+    "Navigation": "246, 244, 249" #F6F4F9 (White)
+    "Active Navigation": "220, 1, 43" #DC012B (Red)
+    "Navigation Font": "Tahoma"
+    "Heading Font": "Tahoma"
+    "Body Font": "Tahoma"
+  "Log Cabin":
+    "Link Color": "26, 18, 2" #1A1202 (Black)
+    "Left Side Links": "26, 18, 2" #1A1202 (Black)
+    "Left Side Accent": "253, 255, 240" #FDFFF0 (Tan White)
+    "Right Side Background": "253, 255, 240" #FDFFF0 (Tan White)
+    "Left Side Background": "83, 13, 13" #530D0D (Burgundy)
+    "Heading Color": "26, 18, 2" #1A1202 (Black)
+    "Hover Color": "26, 18, 2" #1A1202 (Black)
+    "Navigation": "245, 255, 192" #F5FFC0 (Tan)
+    "Active Navigation": "253, 255, 240" #FDFFF0 (Tan White)
+    "Navigation Font": "Georgia"
+    "Heading Font": "Georgia"
+    "Body Font": "Georgia"
+  "Coconut Lime":
+    "Link Color": "32, 76, 87" #204C57 (Navy)
+    "Left Side Links": "32, 76, 87" #204C57 (Navy)
+    "Left Side Accent": "246, 244, 249" #F6F4F9 (White)
+    "Right Side Background": "246, 244, 249" #F6F4F9 (White)
+    "Left Side Background": "19, 39, 48" #132730 (Dark Navy)
+    "Heading Color": "184, 212, 50" #B8D432 (Lime)
+    "Hover Color": "26, 18, 2" #1A1202 (Black)
+    "Navigation": "32, 76, 87" #204C57 (Navy)
+    "Active Navigation": "184, 212, 50" #B8D432 (Lime)
+    "Navigation Font": "Trebuchet MS"
+    "Heading Font": "Trebuchet MS"
+    "Body Font": "Trebuchet MS"
