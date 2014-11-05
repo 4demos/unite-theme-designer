@@ -1,0 +1,60 @@
+/* line 18, ../../app/assets/stylesheets/print.scss */
+#background,
+div#current_user,
+#quick_info,
+#authentication,
+ol#main_navigation,
+div#search_box,
+#left_container #footer,
+#navigation,
+#secondary_navigation,
+#subitems_nav,
+#show_feedback,
+#feedback,
+#admin,
+#tester_bar,
+#_unite_layout_selector,
+.-unite-page-admin,
+.breadcrumbs,
+#banner {
+  display: none !important;
+}
+
+/* line 22, ../../app/assets/stylesheets/print.scss */
+#header {
+  height: auto !important;
+}
+
+/* line 27, ../../app/assets/stylesheets/print.scss */
+#membership_directory #filter {
+  display: none;
+}
+/* line 30, ../../app/assets/stylesheets/print.scss */
+#membership_directory > ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+/* line 33, ../../app/assets/stylesheets/print.scss */
+#membership_directory > ol li.member {
+  min-height: 52px;
+  color: #000;
+  overflow: hidden;
+  margin-bottom: 0.5em;
+}
+/* line 38, ../../app/assets/stylesheets/print.scss */
+#membership_directory > ol li.member div span a {
+  color: #000;
+}
+/* line 41, ../../app/assets/stylesheets/print.scss */
+#membership_directory > ol li.member .portrait {
+  float: left;
+  margin-right: 1em;
+}
+/* line 45, ../../app/assets/stylesheets/print.scss */
+#membership_directory > ol li.member .memberdir-info {
+  float: left;
+}
+/* line 47, ../../app/assets/stylesheets/print.scss */
+#membership_directory > ol li.member .memberdir-info a {
+  text-decoration: none;
+}

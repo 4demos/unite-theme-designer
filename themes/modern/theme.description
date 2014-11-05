@@ -1,0 +1,53 @@
+---
+name: Modern
+notes: |
+  The Modern theme employs a customizable background image and various font weights to create a strong contrast.
+options:
+  "Background": :file
+  "Accent Color": :color
+presets:
+  "Green Pasture":
+    "Background": "/themes/modern/assets/green_pasture.jpg"
+    "Accent Color": "59, 168, 159" #3ba89f (Spearmint)
+  "Zion":
+    "Background": "/themes/modern/assets/zion.jpg"
+    "Accent Color": "102, 75, 22" #664b16 (Brown)
+  "Dayspring":
+    "Background": "/themes/modern/assets/dayspring.jpg"
+    "Accent Color": "41, 144, 148" #299094 (Deep Teal)
+  "Stained Glass":
+    "Background": "/themes/modern/assets/stained_glass.jpg"
+    "Accent Color": "240, 150, 14" #f0960e (Electric Cantaloupe)
+  "Resurrection":
+    "Background": "/themes/modern/assets/resurrection.jpg"
+    "Accent Color": "254, 209, 71" #FED147 (Gold)
+  "Dusk":
+    "Background": "/themes/modern/assets/dusk.jpg"
+    "Accent Color": "130, 3, 41" #820329 (Raspberry)
+  "Perspective":
+    "Background": "/themes/modern/assets/perspective.jpg"
+    "Accent Color": "255, 70, 114" #FF4672 (Pink)
+  "Flash":
+    "Background": "/themes/modern/assets/flash.jpg"
+    "Accent Color": "26, 120, 200" #1A78C8 (Blue)
+  "Mockingbird":
+    "Background": "/themes/modern/assets/mockingbird.jpg"
+    "Accent Color": "129, 173, 1852" #81adb6 (Light Blue)
+  "Pond":
+    "Background": "/themes/modern/assets/pond.jpg"
+    "Accent Color": "163, 207, 85" #A3CF55 (Green)
+  "Rain":
+    "Background": "/themes/modern/assets/rain.jpg"
+    "Accent Color": "0 ,128, 167" #0080A7 (Blue)
+  "Spotted":
+    "Background": "/themes/modern/assets/spotted.jpg"
+    "Accent Color": "43, 150, 164" #2B96A4 (Teal)
+  "Forest":
+    "Background": "/themes/modern/assets/forest.jpg"
+    "Accent Color": "122, 123, 39" #7A7B27 (Forest Green)
+  "Grate":
+    "Background": "/themes/modern/assets/grate.jpg"
+    "Accent Color": "105, 105, 105" #696969 (Gray)
+  "Pixels":
+    "Background": "/themes/modern/assets/pixels.jpg"
+    "Accent Color": "65, 178, 218" #41B2DA (Blue)

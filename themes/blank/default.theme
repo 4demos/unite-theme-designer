@@ -1,0 +1,66 @@
+{{#html}}
+<head>
+  <title>{{page/title}} - {{church/name}}</title>
+  {{{unite/head}}} <!-- required -->
+  <link href="{{theme/path}}/stylesheets/theme.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <h1>{{church/name}}</h1>
+  
+  <div>
+    <div>{{{navigation/searchBox}}}</div>
+    <div>{{{navigation/currentUser}}}</div>
+  </div>
+  
+  <div><!-- navigation -->
+    <h4>Navigation</h4>
+    {{#navigation}}
+      <ol>
+        {{#menuItems}}
+          <li>
+            {{{menuItem}}}
+            {{#if children}}
+              <ol>
+                {{#children}}
+                  <li>{{{menuItem}}}</li>
+                {{/children}}
+              </ol>
+            {{/if}}
+          </li>
+        {{/menuItems}}
+      </ol>
+    {{/navigation}}
+  </div><!-- /navigation -->
+  
+  <div><!-- body -->
+    {{#page}}
+      <h1>{{{heading}}}</h1>
+      {{{admin}}}
+      <p>{{#breadcrumbs}}{{{this}}}{{/breadcrumbs}}</p>
+      {{{alerts}}}
+      {{{body}}}
+    {{/page}}
+  </div><!-- /body -->
+  
+  <div><!-- footer -->
+    {{#church}}
+      {{name}}<br />
+      {{#if address}}
+        {{#linkToMap address}}
+          {{#lines address}}
+            {{this}}
+          {{/lines}}
+        {{/linkToMap}}<br />
+      {{/if}}
+      {{#if phone}}
+        {{phone}}<br />
+      {{/if}}
+      {{#if email}}
+        <a href="mailto:{{this}}">{{email}}</a>
+      {{/if}}
+    {{/church}}
+  </div><!-- /footer -->
+  
+  {{{unite/scripts}}} <!-- required -->
+</body>
+{{/html}}
