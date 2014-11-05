@@ -1,0 +1,9 @@
+<html>
+<head>
+  <link href="css/theme.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  {{{body}}}
+  <p>(Brought to you by the layout)</p>
+</body>
+</html>
