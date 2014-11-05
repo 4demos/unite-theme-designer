@@ -1,6 +1,7 @@
 var express = require('express');
 var path = require('path');
 var logger = require('morgan');
+var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes');
@@ -8,18 +9,16 @@ require('./lib/handlebars_helpers');
 
 var app = express();
 
-var theme = process.env.THEME || 'blank';
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
-app.set('view options', {layout: '../../themes/' + theme + '/default.theme'});
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
 app.use('/assets', express.static(path.join(__dirname, 'assets'))); // assets supplied by Unite
-app.use('/theme', express.static(path.join(__dirname, '../themes/' + theme))); // assets supplied by the theme
+app.use('/themes', express.static(path.join(__dirname, '../themes'))); // assets supplied by the theme
 
 app.use('/', routes);
 

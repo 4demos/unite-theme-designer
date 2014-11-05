@@ -45,7 +45,6 @@ module.exports = {
     phone: null,
     email: 'test@example.com'
   },
-  theme: { path: '/theme' },
   page: {
     type: 'page',
     breadcrumbs: [],
