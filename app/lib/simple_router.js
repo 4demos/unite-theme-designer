@@ -41,7 +41,6 @@ function withListOfThemes(callback) {
 }
 
 var get = function(path, options) {
-  if(!options.title) throw "You must pass 'title' to get";
   if(!options.template) throw "You must pass 'template' to get";
   
   router.get(path, function(req, res) {
