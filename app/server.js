@@ -1,19 +1,33 @@
 var express = require('express');
 var path = require('path');
-var logger = require('morgan');
+var morgan = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var fs = require('fs')
+var log4js = require("log4js");
+log4js.configure({
+  appenders: { cheese: { type: "file", filename: path.join(__dirname, 'log4js.log') } },
+  categories: { default: { appenders: ["cheese"], level: "error" } }
+});
 var routes = require('./routes');
 require('./lib/handlebars_helpers');
 
 var app = express();
+var accessLogStream = fs.createWriteStream(path.join(__dirname, 'morgan-access.log'), { flags: 'a' })
+var logger = log4js.getLogger("cheese");
+logger.trace("Entering cheese testing");
+logger.debug("Got cheese.");
+logger.info("Cheese is Comté.");
+logger.warn("Cheese is quite smelly.");
+logger.error("Cheese is too ripe!");
+logger.fatal("Cheese was breeding ground for listeria.");
+logger.level = "debug";
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
-app.use(logger('dev'));
+app.use(morgan('combined', {stream: accessLogStream}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -40,6 +54,10 @@ if (app.get('env') === 'development') {
             message: err.message,
             error: err
         });
+        logger.error({
+            message: err.message,
+            error: err
+        });
     });
 }
 
@@ -51,14 +69,16 @@ app.use(function(err, req, res, next) {
         message: err.message,
         error: {}
     });
+    logger.error({
+        message: err.message,
+        error: err
+    });
 });
-
-
 
 // Server
 
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 8080);
 
 var server = app.listen(app.get('port'), function() {
-  console.log('Express server listening on port ' + server.address().port);
+  logger.info('Express server listening on port ' + server.address().port);
 });
