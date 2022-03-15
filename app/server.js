@@ -6,28 +6,28 @@ var bodyParser = require('body-parser');
 var fs = require('fs')
 var log4js = require("log4js");
 log4js.configure({
-  appenders: { cheese: { type: "file", filename: path.join(__dirname, 'log4js.log') } },
-  categories: { default: { appenders: ["cheese"], level: "error" } }
+  appenders: { cheese: { type: 'stdout' } },
+  categories: { default: { appenders: ["cheese"], level: "debug" } }
 });
 var routes = require('./routes');
 require('./lib/handlebars_helpers');
 
 var app = express();
-var accessLogStream = fs.createWriteStream(path.join(__dirname, 'morgan-access.log'), { flags: 'a' })
+app.use(morgan('combined'));
+
 var logger = log4js.getLogger("cheese");
-logger.trace("Entering cheese testing");
-logger.debug("Got cheese.");
-logger.info("Cheese is Comté.");
-logger.warn("Cheese is quite smelly.");
-logger.error("Cheese is too ripe!");
-logger.fatal("Cheese was breeding ground for listeria.");
 logger.level = "debug";
+logger.trace("<<APP RUNNER>> testing");
+logger.debug("<<APP RUNNER>> Got cheese.");
+logger.info("<<APP RUNNER>> Cheese is Comté.");
+logger.warn("<<APP RUNNER>> Cheese is quite smelly.");
+logger.error("<<APP RUNNER>> Cheese is too ripe!");
+logger.fatal("<<APP RUNNER>> Cheese was breeding ground for listeria.");
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
-app.use(morgan('combined', {stream: accessLogStream}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -55,7 +55,7 @@ if (app.get('env') === 'development') {
             error: err
         });
         logger.error({
-            message: err.message,
+            message: "<<APP RUNNER>> "+err.message,
             error: err
         });
     });
@@ -70,7 +70,7 @@ app.use(function(err, req, res, next) {
         error: {}
     });
     logger.error({
-        message: err.message,
+        message: "<<APP RUNNER>> "+err.message,
         error: err
     });
 });
@@ -80,5 +80,5 @@ app.use(function(err, req, res, next) {
 app.set('port', process.env.PORT || 8080);
 
 var server = app.listen(app.get('port'), function() {
-  logger.info('Express server listening on port ' + server.address().port);
+  logger.info('<<APP RUNNER>> Express server listening on port ' + server.address().port);
 });
