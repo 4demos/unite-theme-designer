@@ -11,6 +11,7 @@ log4js.configure({
 });
 var routes = require('./routes');
 require('./lib/handlebars_helpers');
+var newrelic = require('./newrelic');
 
 var app = express();
 app.use(morgan('combined'));
