@@ -3,7 +3,8 @@ var path = require('path');
 var morgan = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var fs = require('fs')
+var fs = require('fs');
+var math = require('mathjs');
 var log4js = require("log4js");
 log4js.configure({
   appenders: { cheese: { type: 'stdout' } },
@@ -11,7 +12,8 @@ log4js.configure({
 });
 var routes = require('./routes');
 require('./lib/handlebars_helpers');
-require('./newrelic');
+//var nr = require('./newrelic');
+var nr = require('newrelic');
 
 var app = express();
 app.use(morgan('combined'));
@@ -34,6 +36,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use('/assets', express.static(path.join(__dirname, 'assets'))); // assets supplied by Unite
 app.use('/themes', express.static(path.join(__dirname, '../themes'))); // assets supplied by the theme
+
+app.get('/nrtest', function(req, res) {
+  var rn = math.random();
+  res.send({'got':rn});
+  nr.recordMetric('Test/NRRandomNumber', rn);
+});
 
 app.use('/', routes);
 
@@ -76,6 +84,7 @@ app.use(function(err, req, res, next) {
     });
 });
 
+
 // Server
 
 app.set('port', process.env.PORT || 8080);
@@ -83,3 +92,4 @@ app.set('port', process.env.PORT || 8080);
 var server = app.listen(app.get('port'), function() {
   logger.info('<<APP RUNNER>> Express server listening on port ' + server.address().port);
 });
+
