@@ -40,6 +40,7 @@ app.use('/themes', express.static(path.join(__dirname, '../themes'))); // assets
 app.get('/nrtest', function(req, res) {
   var rn = math.random();
   res.send({'got':rn});
+  logger.info("<<APP RUNNER>> NRRandomNumber call");
   nr.recordMetric('Test/NRRandomNumber', rn);
 });
 
