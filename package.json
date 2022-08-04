@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "infra": "curl -Ls https://download.newrelic.com/install/newrelic-cli/scripts/install.sh | bash && sudo NEW_RELIC_API_KEY=960293ce8612beb2ca505cfda188017dFFFFNRAL NEW_RELIC_ACCOUNT_ID=756053 /usr/local/bin/newrelic install -n logs-integration | npm install",
+    "infra": "curl -Ls https://download.newrelic.com/install/newrelic-cli/scripts/install.sh | bash && sudo NEW_RELIC_API_KEY=$NEW_RELIC_API_KEY NEW_RELIC_ACCOUNT_ID=$NEW_RELIC_ACCOUNT_ID /usr/local/bin/newrelic install -n logs-integration | npm install",
     "start": "node ./app/server.js"
   },
   "dependencies": {
